@@ -1,0 +1,106 @@
+# 每天抓通路價、把結果 commit 回 repo，再把網站發布到 GitHub Pages。
+# 也可以在 Actions 頁按「Run workflow」手動跑。
+name: 抓價與發布網站
+
+on:
+  schedule:
+    # UTC 01:00 = 台灣時間 09:00。GitHub 的排程尖峰時可能延遲幾十分鐘，屬正常。
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/parts_list.csv"
+      - "data/manual_quotes.csv"
+      - "data/notices.json"
+      - "index.html"
+      - "scripts/**"
+      - ".github/workflows/update.yml"
+
+permissions:
+  contents: write      # 把抓到的資料 commit 回 repo
+  pages: write         # 發布 GitHub Pages
+  id-token: write
+
+concurrency:
+  group: mcu-site
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      fetch_failed: ${{ steps.mark.outputs.failed }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 跑單元測試
+        run: node --test scripts/test/*.test.js
+
+      # 在 GitHub 上改 CSV 觸發的執行只重建資料，不呼叫 API，這樣改完馬上看得到、也不燒額度。
+      - name: 抓價
+        id: fetch
+        continue-on-error: true
+        env:
+          DIGIKEY_CLIENT_ID: ${{ secrets.DIGIKEY_CLIENT_ID }}
+          DIGIKEY_CLIENT_SECRET: ${{ secrets.DIGIKEY_CLIENT_SECRET }}
+          DIGIKEY_CURRENCY: ${{ vars.DIGIKEY_CURRENCY }}
+          DIGIKEY_SITE: ${{ vars.DIGIKEY_SITE }}
+          MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
+        run: node scripts/fetch.js ${{ github.event_name == 'push' && '--no-fetch' || '' }}
+
+      - name: 把資料 commit 回 repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --staged --quiet; then
+            echo "資料沒有變化，不用 commit。"
+          else
+            git commit -m "資料更新 $(TZ=Asia/Taipei date +%Y-%m-%d\ %H:%M)"
+            git push
+          fi
+
+      - name: 整理要發布的檔案
+        run: |
+          mkdir -p _site
+          cp index.html _site/
+          cp -R data _site/
+          touch _site/.nojekyll
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: 記下抓價有沒有全掛
+        id: mark
+        run: echo "failed=${{ steps.fetch.outcome == 'failure' && '1' || '0' }}" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  # 網站已經更新完（頁面上的「最近一次抓價」會寫出原因），最後才把這次執行標成失敗。
+  report:
+    needs: [build, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: 抓價全部失敗就讓這次執行顯示失敗
+        if: needs.build.outputs.fetch_failed == '1'
+        run: |
+          echo "::error::所有已設定的資料源都失敗了。點開上面的 build → 抓價 這個步驟看錯誤訊息。"
+          exit 1
+      - name: 沒問題
+        if: needs.build.outputs.fetch_failed != '1'
+        run: echo "完成。"

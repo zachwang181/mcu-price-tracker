@@ -1,0 +1,17 @@
+[
+  { "id": "cms-0127", "vendor": "中微半導", "announced": "2026-01-27", "effective": "2026-01-27", "range": "15–50%", "scope": "MCU、NOR Flash，即日起", "source": "經濟日報、TechNews 1/27–28" },
+  { "id": "nations-0407", "vendor": "國民技術", "announced": "2026-04-07", "effective": "2026-04-07", "range": "15–20%", "scope": "部分核心產品（報導稱 4 月起執行）", "source": "網易／產業文章 5/13" },
+  { "id": "nations-1001", "vendor": "國民技術", "announced": "2026-08-11", "effective": "2026-10-01", "range": "10–20%", "scope": "高性能 MCU（工業、AI 電源、數位電源）", "source": "證券時報 8/11、國際電子商情 8/12" },
+  { "id": "puya-0415", "vendor": "普冉", "announced": "2026-03-31", "effective": "2026-04-15", "range": "未公布", "scope": "通用 MCU 全面調漲", "source": "產業文章（5/13）" },
+  { "id": "whxy-0506", "vendor": "武漢芯源", "announced": "2026-04-21", "effective": "2026-05-06", "range": "重新議價", "scope": "全系列產品價格重新議定", "source": "產業文章（5/13）、華盛通" },
+  { "id": "st-0426", "vendor": "STMicroelectronics", "announced": "2026-03-24", "effective": "2026-04-26", "range": "MCU 約 5%", "scope": "車用功率、高階工業 MCU 等供給吃緊產品", "source": "TrendForce 3/26；5% 為 Supplyframe Commodity IQ 資料" },
+  { "id": "st-0628", "vendor": "STMicroelectronics", "announced": "2026-05-28", "effective": "2026-06-28", "range": "未公布", "scope": "擴及前一輪未涵蓋產品，包括通用 MCU", "source": "TrendForce 6/23、EE Times China" },
+  { "id": "st-0823", "vendor": "STMicroelectronics", "announced": "", "effective": "2026-08-23", "range": "未公布", "scope": "多條產品線，未公布範圍", "source": "TrendForce 8/21、EE Times China" },
+  { "id": "ifx-0401", "vendor": "Infineon", "announced": "", "effective": "2026-04-01", "range": "未公布", "scope": "主要為功率開關等", "source": "Semicon electronics 6/1" },
+  { "id": "ifx-0701", "vendor": "Infineon", "announced": "2026-05-26", "effective": "2026-07-01", "range": "10–20%", "scope": "AI 伺服器電源、車用功率元件", "source": "TrendForce 8/21" },
+  { "id": "nxp-0401", "vendor": "NXP", "announced": "", "effective": "2026-04-01", "range": "未公布", "scope": "部分類比、混合訊號與 MCU 產品", "source": "Microchip USA 4/15" },
+  { "id": "ti-0401", "vendor": "Texas Instruments", "announced": "", "effective": "2026-04-01", "range": "未公布", "scope": "部分產品", "source": "J2 Sourcing 整理" },
+  { "id": "ti-0701", "vendor": "Texas Instruments", "announced": "", "effective": "2026-07-01", "range": "未公布", "scope": "部分產品", "source": "J2 Sourcing 整理" },
+  { "id": "mchp-0814", "vendor": "Microchip", "announced": "", "effective": "2026-08-14", "range": "未公布", "scope": "部分產品（經濟日報稱業界流傳，8 月中起）", "source": "J2 Sourcing、經濟日報 7/3" },
+  { "id": "nuvoton-0401", "vendor": "Nuvoton", "announced": "", "effective": "2026-04-01", "range": "約 20%", "scope": "代工＋MCU（未經原廠證實）", "source": "東方財富財富號 3/4；TrendForce 6/23 提及新唐已宣布 MCU 漲價" }
+]

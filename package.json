@@ -1,0 +1,12 @@
+{
+  "name": "mcu-price-tracker",
+  "private": true,
+  "version": "1.0.0",
+  "description": "MCU 料號通路價格追蹤：GitHub Actions 每天抓價，GitHub Pages 發布網頁。",
+  "scripts": {
+    "test": "node --test scripts/test/*.test.js",
+    "fetch": "node scripts/fetch.js",
+    "rebuild": "node scripts/fetch.js --no-fetch"
+  },
+  "engines": { "node": ">=20" }
+}

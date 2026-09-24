@@ -1,0 +1,25 @@
+{
+  "ranAt": "2026-09-24T20:44:59.091Z",
+  "dateTW": "2026-09-25",
+  "sources": [
+    {
+      "name": "Digi-Key",
+      "key": "digikey",
+      "status": "skipped",
+      "configured": false,
+      "reason": "沒有設定 DIGIKEY_CLIENT_ID / DIGIKEY_CLIENT_SECRET"
+    },
+    {
+      "name": "Mouser",
+      "key": "mouser",
+      "status": "skipped",
+      "configured": false,
+      "reason": "沒有設定 MOUSER_API_KEY"
+    }
+  ],
+  "parts": 13,
+  "newObs": 0,
+  "problems": [],
+  "ok": true,
+  "rebuiltAt": "2026-09-24T20:52:37.575Z"
+}

@@ -1,0 +1,239 @@
+[
+  {
+    "id": "STM32F103C8T6",
+    "mpn": "STM32F103C8T6",
+    "manufacturer": "STMicroelectronics",
+    "group": "intl",
+    "note": "經典 Cortex-M3，替代料多，適合當基準",
+    "obs": [
+      {
+        "id": "seed0618",
+        "d": "2026-06-18",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 2400,
+        "p": 3.75,
+        "cur": "USD",
+        "lt": 31,
+        "st": 4100,
+        "note": "Findchips 部落格 6/18 快照（交期 30–31 週）",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925a",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 1,
+        "p": 1.6225,
+        "cur": "USD",
+        "lt": null,
+        "st": 64428,
+        "note": "LCSC C8734，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925b",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 250,
+        "p": 1.1107,
+        "cur": "USD",
+        "lt": null,
+        "st": 64428,
+        "note": "LCSC C8734，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925c",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 1.0188,
+        "cur": "USD",
+        "lt": null,
+        "st": 64428,
+        "note": "LCSC C8734，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      }
+    ]
+  },
+  {
+    "id": "STM32G030F6P6",
+    "mpn": "STM32G030F6P6",
+    "manufacturer": "STMicroelectronics",
+    "group": "intl",
+    "note": "低價 Cortex-M0+",
+    "obs": []
+  },
+  {
+    "id": "ATMEGA328P-AU",
+    "mpn": "ATMEGA328P-AU",
+    "manufacturer": "Microchip",
+    "group": "intl",
+    "note": "8-bit AVR",
+    "obs": []
+  },
+  {
+    "id": "ATSAMD21G18A-AU",
+    "mpn": "ATSAMD21G18A-AU",
+    "manufacturer": "Microchip",
+    "group": "intl",
+    "note": "Cortex-M0+",
+    "obs": [
+      {
+        "id": "lcsc0925a",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 1,
+        "p": 3.4798,
+        "cur": "USD",
+        "lt": null,
+        "st": 8382,
+        "note": "LCSC C78624，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925b",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 250,
+        "p": 2.3139,
+        "cur": "USD",
+        "lt": null,
+        "st": 8382,
+        "note": "LCSC C78624，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925c",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.1004,
+        "cur": "USD",
+        "lt": null,
+        "st": 8382,
+        "note": "LCSC C78624，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      }
+    ]
+  },
+  {
+    "id": "MKL25Z128VLK4",
+    "mpn": "MKL25Z128VLK4",
+    "manufacturer": "NXP",
+    "group": "intl",
+    "note": "Kinetis Cortex-M0+",
+    "obs": []
+  },
+  {
+    "id": "LPC1768FBD100",
+    "mpn": "LPC1768FBD100",
+    "manufacturer": "NXP",
+    "group": "intl",
+    "note": "Cortex-M3",
+    "obs": []
+  },
+  {
+    "id": "MSP430G2553IN20",
+    "mpn": "MSP430G2553IN20",
+    "manufacturer": "Texas Instruments",
+    "group": "intl",
+    "note": "16-bit",
+    "obs": []
+  },
+  {
+    "id": "R7FA4M1AB3CFM",
+    "mpn": "R7FA4M1AB3CFM",
+    "manufacturer": "Renesas",
+    "group": "intl",
+    "note": "RA4M1 Cortex-M4",
+    "obs": []
+  },
+  {
+    "id": "GD32F103C8T6",
+    "mpn": "GD32F103C8T6",
+    "manufacturer": "GigaDevice",
+    "group": "cn",
+    "note": "STM32F103 pin-to-pin 替代",
+    "obs": [
+      {
+        "id": "lcsc0925a",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 1,
+        "p": 1.4643,
+        "cur": "USD",
+        "lt": null,
+        "st": 12565,
+        "note": "LCSC C77994，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925b",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 250,
+        "p": 1.0131,
+        "cur": "USD",
+        "lt": null,
+        "st": 12565,
+        "note": "LCSC C77994，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      },
+      {
+        "id": "lcsc0925c",
+        "d": "2026-09-25",
+        "src": "LCSC",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 0.9317,
+        "cur": "USD",
+        "lt": null,
+        "st": 12565,
+        "note": "LCSC C77994，9/25 由 Claude 讀取官網",
+        "origin": "manual"
+      }
+    ]
+  },
+  {
+    "id": "GD32F303RCT6",
+    "mpn": "GD32F303RCT6",
+    "manufacturer": "GigaDevice",
+    "group": "cn",
+    "note": "Cortex-M4",
+    "obs": []
+  },
+  {
+    "id": "CH32V003F4P6",
+    "mpn": "CH32V003F4P6",
+    "manufacturer": "WCH",
+    "group": "cn",
+    "note": "RISC-V 超低價",
+    "obs": []
+  },
+  {
+    "id": "CH32F103C8T6",
+    "mpn": "CH32F103C8T6",
+    "manufacturer": "WCH",
+    "group": "cn",
+    "note": "STM32F103 替代",
+    "obs": []
+  },
+  {
+    "id": "N76E003AT20",
+    "mpn": "N76E003AT20",
+    "manufacturer": "Nuvoton",
+    "group": "tw",
+    "note": "8051",
+    "obs": []
+  }
+]
