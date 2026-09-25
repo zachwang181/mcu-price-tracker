@@ -1,0 +1,43 @@
+# 手動執行：對真實 API 抓少數幾顆料號的「原始回應」，存成 Actions 成品（artifact）下載。
+# 用途是驗證欄位名稱有沒有改掉，或某顆料號查無時要看對方到底回了什麼。
+# 不會寫任何資料進 repo，也不會發布網站。
+name: 抓原始回應（除錯用）
+
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "要抓哪一家：digikey 或 mouser，留空就兩家都抓"
+        required: false
+        default: ""
+      limit:
+        description: "抓料號清單的前幾顆"
+        required: false
+        default: "4"
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: 抓原始回應
+        env:
+          DIGIKEY_CLIENT_ID: ${{ secrets.DIGIKEY_CLIENT_ID }}
+          DIGIKEY_CLIENT_SECRET: ${{ secrets.DIGIKEY_CLIENT_SECRET }}
+          MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
+        run: |
+          node scripts/fetch.js --dry \
+            --limit=${{ inputs.limit }} \
+            ${{ inputs.source != '' && format('--only={0}', inputs.source) || '' }} \
+            --dump=raw-dump.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: raw-dump
+          path: raw-dump.json
+          retention-days: 7
