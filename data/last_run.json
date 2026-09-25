@@ -1,6 +1,6 @@
 {
-  "ranAt": "2026-09-25T12:52:09.064Z",
-  "dateTW": "2026-09-25",
+  "ranAt": "2026-09-25T19:11:25.192Z",
+  "dateTW": "2026-09-26",
   "sources": [
     {
       "name": "Digi-Key",
@@ -22,13 +22,23 @@
     {
       "name": "Mouser",
       "key": "mouser",
-      "status": "skipped",
-      "configured": false,
-      "reason": "沒有設定 MOUSER_API_KEY"
+      "status": "ok",
+      "configured": true,
+      "found": 9,
+      "notFound": 4,
+      "failed": 0,
+      "notFoundMpns": [
+        "GD32F103C8T6",
+        "GD32F303RCT6",
+        "CH32V003F4P6",
+        "CH32F103C8T6"
+      ],
+      "nearMisses": {},
+      "errors": []
     }
   ],
   "parts": 13,
-  "newObs": 0,
+  "newObs": 54,
   "problems": [],
   "ok": true,
   "rebuiltAt": "2026-09-25T19:10:30.144Z"

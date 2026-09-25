@@ -1,0 +1,827 @@
+[
+  {
+    "source": "Digi-Key",
+    "mpn": "STM32F103C8T6",
+    "manufacturer": "STMicroelectronics",
+    "currency": "USD",
+    "leadWeeks": 40,
+    "stock": 7656,
+    "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "497-6063-ND",
+        "moq": 1,
+        "stock": 7656,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 8.24
+          },
+          {
+            "qty": 10,
+            "unit": 6.342
+          },
+          {
+            "qty": 50,
+            "unit": 5.5826
+          },
+          {
+            "qty": 100,
+            "unit": 5.3473
+          },
+          {
+            "qty": 250,
+            "unit": 5.09896
+          },
+          {
+            "qty": 500,
+            "unit": 4.94928
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "STM32G030F6P6",
+    "manufacturer": "STMicroelectronics",
+    "currency": "USD",
+    "leadWeeks": 52,
+    "stock": 74190,
+    "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "497-STM32G030F6P6-ND",
+        "moq": 1,
+        "stock": 74190,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 2.18
+          },
+          {
+            "qty": 10,
+            "unit": 1.604
+          },
+          {
+            "qty": 74,
+            "unit": 1.32919
+          },
+          {
+            "qty": 148,
+            "unit": 1.26466
+          },
+          {
+            "qty": 518,
+            "unit": 1.10917
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "ATMEGA328P-AU",
+    "manufacturer": "Microchip Technology",
+    "currency": "USD",
+    "leadWeeks": 27,
+    "stock": 27749,
+    "url": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "ATMEGA328P-AU-ND",
+        "moq": 1,
+        "stock": 27749,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 2.66
+          },
+          {
+            "qty": 25,
+            "unit": 2.44
+          },
+          {
+            "qty": 100,
+            "unit": 2.2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "ATSAMD21G18A-AU",
+    "manufacturer": "Microchip Technology",
+    "currency": "USD",
+    "leadWeeks": 4,
+    "stock": 2304,
+    "url": "https://www.digikey.com/en/products/detail/microchip-technology/ATSAMD21G18A-AU/5056473",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "ATSAMD21G18A-AU-ND",
+        "moq": 1,
+        "stock": 2304,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 4.16
+          },
+          {
+            "qty": 25,
+            "unit": 3.78
+          },
+          {
+            "qty": 100,
+            "unit": 3.43
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "MKL25Z128VLK4",
+    "manufacturer": "NXP USA Inc.",
+    "currency": "USD",
+    "leadWeeks": 13,
+    "stock": 909,
+    "url": "https://www.digikey.com/en/products/detail/nxp-usa-inc/MKL25Z128VLK4/3608488",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "MKL25Z128VLK4-ND",
+        "moq": 1,
+        "stock": 909,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 12.05
+          },
+          {
+            "qty": 10,
+            "unit": 9.441
+          },
+          {
+            "qty": 50,
+            "unit": 8.398
+          },
+          {
+            "qty": 100,
+            "unit": 8.075
+          },
+          {
+            "qty": 480,
+            "unit": 7.53933
+          },
+          {
+            "qty": 960,
+            "unit": 7.36816
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "LPC1768FBD100K",
+    "manufacturer": "NXP USA Inc.",
+    "currency": "USD",
+    "leadWeeks": 39,
+    "stock": 6814,
+    "url": "https://www.digikey.com/en/products/detail/nxp-usa-inc/LPC1768FBD100K/11681534",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "568-LPC1768FBD100K-ND",
+        "moq": 1,
+        "stock": 6814,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 16.47
+          },
+          {
+            "qty": 10,
+            "unit": 13.039
+          },
+          {
+            "qty": 50,
+            "unit": 11.6662
+          },
+          {
+            "qty": 100,
+            "unit": 11.2412
+          },
+          {
+            "qty": 450,
+            "unit": 10.55989
+          },
+          {
+            "qty": 900,
+            "unit": 10.33068
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "MSP430G2553IN20",
+    "manufacturer": "Texas Instruments",
+    "currency": "USD",
+    "leadWeeks": 16,
+    "stock": 343,
+    "url": "https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2638885",
+    "packagings": [
+      {
+        "name": "Tube",
+        "code": "296-28429-5-ND",
+        "moq": 1,
+        "stock": 343,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 4.42
+          },
+          {
+            "qty": 20,
+            "unit": 3.136
+          },
+          {
+            "qty": 60,
+            "unit": 2.87683
+          },
+          {
+            "qty": 100,
+            "unit": 2.7809
+          },
+          {
+            "qty": 120,
+            "unit": 2.74983
+          },
+          {
+            "qty": 500,
+            "unit": 2.55476
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "R7FA4M1AB3CFM#AA0",
+    "manufacturer": "Renesas Electronics Corporation",
+    "currency": "USD",
+    "leadWeeks": 18,
+    "stock": 5248,
+    "url": "https://www.digikey.com/en/products/detail/renesas-electronics-corporation/R7FA4M1AB3CFM-AA0/10447195",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "559-R7FA4M1AB3CFM#AA0-ND",
+        "moq": 1,
+        "stock": 5248,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 6.38
+          },
+          {
+            "qty": 10,
+            "unit": 4.88
+          },
+          {
+            "qty": 50,
+            "unit": 4.2786
+          },
+          {
+            "qty": 100,
+            "unit": 4.0924
+          },
+          {
+            "qty": 160,
+            "unit": 3.98519
+          },
+          {
+            "qty": 640,
+            "unit": 3.74023
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "N76E003AT20",
+    "manufacturer": "Nuvoton Technology Corporation",
+    "currency": "USD",
+    "leadWeeks": 32,
+    "stock": 2742,
+    "url": "https://www.digikey.com/en/products/detail/nuvoton-technology-corporation/N76E003AT20/8747842",
+    "packagings": [
+      {
+        "name": "Tube",
+        "code": "N76E003AT20-ND",
+        "moq": 1,
+        "stock": 2742,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 0.83
+          },
+          {
+            "qty": 10,
+            "unit": 0.711
+          },
+          {
+            "qty": 74,
+            "unit": 0.60514
+          },
+          {
+            "qty": 148,
+            "unit": 0.57182
+          },
+          {
+            "qty": 518,
+            "unit": 0.5189
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "STM32F103C8T6",
+    "manufacturer": "STMicroelectronics",
+    "currency": "USD",
+    "leadWeeks": 40,
+    "stock": 6344,
+    "url": "https://www.mouser.tw/zh/ProductDetail/STMicroelectronics/STM32F103C8T6?qs=bhCVus9SdFtq6kqxsU5%2FDA%3D%3D",
+    "packagings": [
+      {
+        "name": "511-STM32F103C8T6",
+        "code": "511-STM32F103C8T6",
+        "moq": 1,
+        "stock": 6344,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 7.96,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 5.57,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 4.91,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 4.52,
+            "currency": "USD"
+          },
+          {
+            "qty": 250,
+            "unit": 4.35,
+            "currency": "USD"
+          },
+          {
+            "qty": 500,
+            "unit": 4.2,
+            "currency": "USD"
+          },
+          {
+            "qty": 1000,
+            "unit": 4.16,
+            "currency": "USD"
+          },
+          {
+            "qty": 1500,
+            "unit": 4.1,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "STM32G030F6P6",
+    "manufacturer": "STMicroelectronics",
+    "currency": "USD",
+    "leadWeeks": 52,
+    "stock": 42920,
+    "url": "https://www.mouser.tw/zh/ProductDetail/STMicroelectronics/STM32G030F6P6?qs=uwxL4vQweFOQRcVHghCbHA%3D%3D",
+    "packagings": [
+      {
+        "name": "511-STM32G030F6P6",
+        "code": "511-STM32G030F6P6",
+        "moq": 1,
+        "stock": 42920,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 2.03,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 1.4,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 1.2,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 1.07,
+            "currency": "USD"
+          },
+          {
+            "qty": 250,
+            "unit": 0.934,
+            "currency": "USD"
+          },
+          {
+            "qty": 500,
+            "unit": 0.885,
+            "currency": "USD"
+          },
+          {
+            "qty": 1000,
+            "unit": 0.804,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "ATMEGA328P-AU",
+    "manufacturer": "Microchip Technology",
+    "currency": "USD",
+    "leadWeeks": 9,
+    "stock": 8167,
+    "url": "https://www.mouser.tw/zh/ProductDetail/Microchip-Technology/ATMEGA328P-AU?qs=K8BHR703ZXiCmmgp6%2FGNmQ%3D%3D",
+    "packagings": [
+      {
+        "name": "556-ATMEGA328P-AU",
+        "code": "556-ATMEGA328P-AU",
+        "moq": 1,
+        "stock": 8167,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 2.66,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 2.44,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 2.2,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "ATSAMD21G18A-AU",
+    "manufacturer": "Microchip Technology",
+    "currency": "USD",
+    "leadWeeks": 9.6,
+    "stock": 1630,
+    "url": "https://www.mouser.tw/zh/ProductDetail/Microchip-Technology/ATSAMD21G18A-AU?qs=KLFHFgXTQiDh1vL0VLU76Q%3D%3D",
+    "packagings": [
+      {
+        "name": "556-ATSAMD21G18A-AU",
+        "code": "556-ATSAMD21G18A-AU",
+        "moq": 1,
+        "stock": 1630,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 4.16,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 3.78,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 3.43,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "MKL25Z128VLK4",
+    "manufacturer": "NXP Semiconductors",
+    "currency": "USD",
+    "leadWeeks": 13,
+    "stock": 655,
+    "url": "https://www.mouser.tw/zh/ProductDetail/NXP-Semiconductors/MKL25Z128VLK4?qs=UFwME9ENKRbBwXo%252BZH8TjQ%3D%3D",
+    "packagings": [
+      {
+        "name": "841-MKL25Z128VLK4",
+        "code": "841-MKL25Z128VLK4",
+        "moq": 1,
+        "stock": 655,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 12.05,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 9.45,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 8.4,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 8.08,
+            "currency": "USD"
+          },
+          {
+            "qty": 250,
+            "unit": 7.54,
+            "currency": "USD"
+          },
+          {
+            "qty": 480,
+            "unit": 7.36,
+            "currency": "USD"
+          },
+          {
+            "qty": 960,
+            "unit": 7.01,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "LPC1768FBD100K",
+    "manufacturer": "NXP Semiconductors",
+    "currency": "USD",
+    "leadWeeks": 39,
+    "stock": 4687,
+    "url": "https://www.mouser.tw/zh/ProductDetail/NXP-Semiconductors/LPC1768FBD100K?qs=rkhjVJ6%2F3EKmgfOsfWOk%2Fw%3D%3D",
+    "packagings": [
+      {
+        "name": "771-LPC1768FBD100K",
+        "code": "771-LPC1768FBD100K",
+        "moq": 1,
+        "stock": 4687,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 16.45,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 12.98,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 11.67,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 11.25,
+            "currency": "USD"
+          },
+          {
+            "qty": 250,
+            "unit": 10.56,
+            "currency": "USD"
+          },
+          {
+            "qty": 450,
+            "unit": 10.33,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "MSP430G2553IN20",
+    "manufacturer": "Texas Instruments",
+    "currency": "USD",
+    "leadWeeks": 16,
+    "stock": 222,
+    "url": "https://www.mouser.tw/zh/ProductDetail/Texas-Instruments/MSP430G2553IN20?qs=cBe3DO7yhR7KujMhn3Ev6Q%3D%3D",
+    "packagings": [
+      {
+        "name": "595-MSP430G2553IN20",
+        "code": "595-MSP430G2553IN20",
+        "moq": 1,
+        "stock": 222,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 4.42,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 3.14,
+            "currency": "USD"
+          },
+          {
+            "qty": 20,
+            "unit": 2.87,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 2.74,
+            "currency": "USD"
+          },
+          {
+            "qty": 500,
+            "unit": 2.55,
+            "currency": "USD"
+          },
+          {
+            "qty": 1000,
+            "unit": 2.46,
+            "currency": "USD"
+          },
+          {
+            "qty": 2500,
+            "unit": 2.45,
+            "currency": "USD"
+          },
+          {
+            "qty": 5000,
+            "unit": 2.39,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "R7FA4M1AB3CFM#AA0",
+    "manufacturer": "Renesas Electronics",
+    "currency": "USD",
+    "leadWeeks": 18,
+    "stock": 3960,
+    "url": "https://www.mouser.tw/zh/ProductDetail/Renesas-Electronics/R7FA4M1AB3CFMAA0?qs=d0WKAl%252BL4KbrKuAsyurXHw%3D%3D",
+    "packagings": [
+      {
+        "name": "968-7FA4M1AB3CFM#AA0",
+        "code": "968-7FA4M1AB3CFM#AA0",
+        "moq": 1,
+        "stock": 3960,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 6.38,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 4.88,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 4.28,
+            "currency": "USD"
+          },
+          {
+            "qty": 100,
+            "unit": 3.99,
+            "currency": "USD"
+          },
+          {
+            "qty": 250,
+            "unit": 3.98,
+            "currency": "USD"
+          },
+          {
+            "qty": 480,
+            "unit": 3.74,
+            "currency": "USD"
+          },
+          {
+            "qty": 1120,
+            "unit": 3.47,
+            "currency": "USD"
+          },
+          {
+            "qty": 2560,
+            "unit": 3.45,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  },
+  {
+    "source": "Mouser",
+    "mpn": "N76E003AT20",
+    "manufacturer": "Nuvoton",
+    "currency": "USD",
+    "leadWeeks": 40,
+    "stock": 1227,
+    "url": "https://www.mouser.tw/zh/ProductDetail/Nuvoton/N76E003AT20?qs=A6eO%252BMLsxmTw2Fm3XoUzRQ%3D%3D",
+    "packagings": [
+      {
+        "name": "503-N76E003AT20",
+        "code": "503-N76E003AT20",
+        "moq": 1,
+        "stock": 1227,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 0.83,
+            "currency": "USD"
+          },
+          {
+            "qty": 10,
+            "unit": 0.711,
+            "currency": "USD"
+          },
+          {
+            "qty": 25,
+            "unit": 0.606,
+            "currency": "USD"
+          },
+          {
+            "qty": 74,
+            "unit": 0.571,
+            "currency": "USD"
+          },
+          {
+            "qty": 518,
+            "unit": 0.518,
+            "currency": "USD"
+          },
+          {
+            "qty": 1036,
+            "unit": 0.505,
+            "currency": "USD"
+          },
+          {
+            "qty": 2516,
+            "unit": 0.486,
+            "currency": "USD"
+          },
+          {
+            "qty": 5032,
+            "unit": 0.481,
+            "currency": "USD"
+          }
+        ],
+        "currency": "USD"
+      }
+    ]
+  }
+]
