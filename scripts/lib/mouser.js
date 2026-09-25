@@ -1,11 +1,11 @@
 "use strict";
-const { normMpn, leadToWeeks, parseCount, parseMoney, sleep } = require("./util");
+const { normMpn, leadToWeeks, parseCount, parseMoney, sleep, env } = require("./util");
 
 const SOURCE = "Mouser";
 const SEARCH_URL = "https://api.mouser.com/api/v1/search/partnumber";
 
-function configured(env) {
-  return Boolean(env.MOUSER_API_KEY);
+function configured(e) {
+  return Boolean(env(e, "MOUSER_API_KEY"));
 }
 
 /**
@@ -73,11 +73,11 @@ function parseResponse(json, mpn, fallbackCurrency = "USD") {
   };
 }
 
-async function fetchAll(mpns, env, opts = {}) {
+async function fetchAll(mpns, e, opts = {}) {
   const ctx = {
-    apiKey: env.MOUSER_API_KEY,
-    searchOption: env.MOUSER_SEARCH_OPTION || "Exact",
-    fallbackCurrency: env.MOUSER_CURRENCY || "USD",
+    apiKey: env(e, "MOUSER_API_KEY"),
+    searchOption: env(e, "MOUSER_SEARCH_OPTION") || "Exact",
+    fallbackCurrency: env(e, "MOUSER_CURRENCY") || "USD",
   };
   const out = [];
   for (const mpn of mpns) {

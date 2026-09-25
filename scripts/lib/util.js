@@ -57,4 +57,10 @@ function parseCount(v) {
   return Number.isFinite(n) ? n : null;
 }
 
-module.exports = { todayTW, normMpn, partId, slug, sleep, leadToWeeks, parseMoney, parseCount };
+/** 讀環境變數並去掉前後空白 —— 貼進 GitHub Secrets 時很容易夾帶到換行。 */
+function env(source, name) {
+  const v = source[name];
+  return typeof v === "string" ? v.trim() : v;
+}
+
+module.exports = { todayTW, normMpn, partId, slug, sleep, leadToWeeks, parseMoney, parseCount, env };

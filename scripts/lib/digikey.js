@@ -1,18 +1,18 @@
 "use strict";
-const { normMpn, leadToWeeks, parseCount, sleep } = require("./util");
+const { normMpn, leadToWeeks, parseCount, sleep, env } = require("./util");
 
 const SOURCE = "Digi-Key";
 const TOKEN_URL = "https://api.digikey.com/v1/oauth2/token";
 const SEARCH_URL = "https://api.digikey.com/products/v4/search/keyword";
 
-function configured(env) {
-  return Boolean(env.DIGIKEY_CLIENT_ID && env.DIGIKEY_CLIENT_SECRET);
+function configured(e) {
+  return Boolean(env(e, "DIGIKEY_CLIENT_ID") && env(e, "DIGIKEY_CLIENT_SECRET"));
 }
 
-async function getToken(env) {
+async function getToken(e) {
   const body = new URLSearchParams({
-    client_id: env.DIGIKEY_CLIENT_ID,
-    client_secret: env.DIGIKEY_CLIENT_SECRET,
+    client_id: env(e, "DIGIKEY_CLIENT_ID"),
+    client_secret: env(e, "DIGIKEY_CLIENT_SECRET"),
     grant_type: "client_credentials",
   });
   const res = await fetch(TOKEN_URL, {
@@ -21,7 +21,11 @@ async function getToken(env) {
     body,
   });
   const text = await res.text();
-  if (!res.ok) throw new Error(`OAuth ${res.status}: ${text.slice(0, 300)}`);
+  if (!res.ok) {
+    // 只印長度，不印內容 —— Actions 的記錄是公開的。
+    const hint = `（Secret 長度：Client ID ${String(env(e, "DIGIKEY_CLIENT_ID") || "").length}、Client Secret ${String(env(e, "DIGIKEY_CLIENT_SECRET") || "").length}）`;
+    throw new Error(`OAuth ${res.status}: ${text.slice(0, 300)} ${hint}`);
+  }
   const json = JSON.parse(text);
   if (!json.access_token) throw new Error(`OAuth 回應沒有 access_token：${text.slice(0, 300)}`);
   return json.access_token;
@@ -96,14 +100,14 @@ function parseResponse(json, mpn, currency = "USD") {
 }
 
 /** 依序抓一批料號。每顆之間稍微停一下，避免踩到速率限制。 */
-async function fetchAll(mpns, env, opts = {}) {
-  const token = await getToken(env);
+async function fetchAll(mpns, e, opts = {}) {
+  const token = await getToken(e);
   const ctx = {
     token,
-    clientId: env.DIGIKEY_CLIENT_ID,
-    currency: env.DIGIKEY_CURRENCY || "USD",
-    site: env.DIGIKEY_SITE || "US",
-    language: env.DIGIKEY_LANGUAGE || "en",
+    clientId: env(e, "DIGIKEY_CLIENT_ID"),
+    currency: env(e, "DIGIKEY_CURRENCY") || "USD",
+    site: env(e, "DIGIKEY_SITE") || "US",
+    language: env(e, "DIGIKEY_LANGUAGE") || "en",
   };
   const out = [];
   for (const mpn of mpns) {
