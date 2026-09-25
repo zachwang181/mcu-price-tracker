@@ -4,9 +4,9 @@ STM32G030F6P6,STMicroelectronics,intl,低價 Cortex-M0+
 ATMEGA328P-AU,Microchip,intl,8-bit AVR
 ATSAMD21G18A-AU,Microchip,intl,Cortex-M0+
 MKL25Z128VLK4,NXP,intl,Kinetis Cortex-M0+
-LPC1768FBD100,NXP,intl,Cortex-M3
+LPC1768FBD100K,NXP,intl,Cortex-M3
 MSP430G2553IN20,Texas Instruments,intl,16-bit
-R7FA4M1AB3CFM,Renesas,intl,RA4M1 Cortex-M4
+R7FA4M1AB3CFM#AA0,Renesas,intl,RA4M1 Cortex-M4
 GD32F103C8T6,GigaDevice,cn,STM32F103 pin-to-pin 替代
 GD32F303RCT6,GigaDevice,cn,Cortex-M4
 CH32V003F4P6,WCH,cn,RISC-V 超低價
