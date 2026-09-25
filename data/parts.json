@@ -331,8 +331,8 @@
     ]
   },
   {
-    "id": "LPC1768FBD100",
-    "mpn": "LPC1768FBD100",
+    "id": "LPC1768FBD100K",
+    "mpn": "LPC1768FBD100K",
     "manufacturer": "NXP",
     "group": "intl",
     "note": "Cortex-M3",
@@ -387,8 +387,8 @@
     ]
   },
   {
-    "id": "R7FA4M1AB3CFM",
-    "mpn": "R7FA4M1AB3CFM",
+    "id": "R7FA4M1AB3CFM_AA0",
+    "mpn": "R7FA4M1AB3CFM#AA0",
     "manufacturer": "Renesas",
     "group": "intl",
     "note": "RA4M1 Cortex-M4",
