@@ -1,4 +1,5 @@
 date,mpn,source,kind,qty,price,currency,lead_weeks,stock,note,id
+# 一列一筆報價。日期一定要 2026-09-30 這種寫法；幣別照對方報的填，不要自己換算；不知道的欄位留空；最後的 id 永遠留空。# 開頭的列會被略過。
 2026-06-18,STM32F103C8T6,Digi-Key,catalog,2400,3.75,USD,31,4100,Findchips 部落格 6/18 快照（交期 30–31 週）,seed0618
 2026-09-25,STM32F103C8T6,LCSC,catalog,1,1.6225,USD,,64428,LCSC C8734，9/25 由 Claude 讀取官網,lcsc0925a
 2026-09-25,STM32F103C8T6,LCSC,catalog,250,1.1107,USD,,64428,LCSC C8734，9/25 由 Claude 讀取官網,lcsc0925b
