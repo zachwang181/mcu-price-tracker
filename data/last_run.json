@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-09-25T12:32:15.876Z",
+  "ranAt": "2026-09-25T12:37:38.620Z",
   "dateTW": "2026-09-25",
   "sources": [
     {
@@ -18,6 +18,18 @@
         "CH32V003F4P6",
         "CH32F103C8T6"
       ],
+      "nearMisses": {
+        "LPC1768FBD100": [
+          "LPC1768FBD100K",
+          "LPC1768FBD100Y",
+          "LPC1768FBD100,551"
+        ],
+        "R7FA4M1AB3CFM": [
+          "R7FA4M1AB3CFM#AA0",
+          "R7FA4M1AB3CFM#BA0",
+          "R7FA4M1AB3CFM#HA0"
+        ]
+      },
       "errors": []
     },
     {
@@ -29,8 +41,7 @@
     }
   ],
   "parts": 13,
-  "newObs": 0,
+  "newObs": 21,
   "problems": [],
-  "ok": true,
-  "rebuiltAt": "2026-09-25T12:36:56.914Z"
+  "ok": true
 }
