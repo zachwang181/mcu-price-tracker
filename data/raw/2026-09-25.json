@@ -188,6 +188,49 @@
   },
   {
     "source": "Digi-Key",
+    "mpn": "LPC1768FBD100K",
+    "manufacturer": "NXP USA Inc.",
+    "currency": "USD",
+    "leadWeeks": 39,
+    "stock": 6814,
+    "url": "https://www.digikey.com/en/products/detail/nxp-usa-inc/LPC1768FBD100K/11681534",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "568-LPC1768FBD100K-ND",
+        "moq": 1,
+        "stock": 6814,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 16.47
+          },
+          {
+            "qty": 10,
+            "unit": 13.039
+          },
+          {
+            "qty": 50,
+            "unit": 11.6662
+          },
+          {
+            "qty": 100,
+            "unit": 11.2412
+          },
+          {
+            "qty": 450,
+            "unit": 10.55989
+          },
+          {
+            "qty": 900,
+            "unit": 10.33068
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
     "mpn": "MSP430G2553IN20",
     "manufacturer": "Texas Instruments",
     "currency": "USD",
@@ -224,6 +267,49 @@
           {
             "qty": 500,
             "unit": 2.55476
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Digi-Key",
+    "mpn": "R7FA4M1AB3CFM#AA0",
+    "manufacturer": "Renesas Electronics Corporation",
+    "currency": "USD",
+    "leadWeeks": 18,
+    "stock": 5248,
+    "url": "https://www.digikey.com/en/products/detail/renesas-electronics-corporation/R7FA4M1AB3CFM-AA0/10447195",
+    "packagings": [
+      {
+        "name": "Tray",
+        "code": "559-R7FA4M1AB3CFM#AA0-ND",
+        "moq": 1,
+        "stock": 5248,
+        "breaks": [
+          {
+            "qty": 1,
+            "unit": 6.38
+          },
+          {
+            "qty": 10,
+            "unit": 4.88
+          },
+          {
+            "qty": 50,
+            "unit": 4.2786
+          },
+          {
+            "qty": 100,
+            "unit": 4.0924
+          },
+          {
+            "qty": 160,
+            "unit": 3.98519
+          },
+          {
+            "qty": 640,
+            "unit": 3.74023
           }
         ]
       }

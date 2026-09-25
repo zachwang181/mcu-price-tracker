@@ -336,7 +336,47 @@
     "manufacturer": "NXP",
     "group": "intl",
     "note": "Cortex-M3",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 16.47,
+        "cur": "USD",
+        "lt": 39,
+        "st": 6814,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 11.2412,
+        "cur": "USD",
+        "lt": 39,
+        "st": 6814,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 10.33068,
+        "cur": "USD",
+        "lt": 39,
+        "st": 6814,
+        "note": "包裝 Tray・級距 900+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   },
   {
     "id": "MSP430G2553IN20",
@@ -392,7 +432,47 @@
     "manufacturer": "Renesas",
     "group": "intl",
     "note": "RA4M1 Cortex-M4",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 6.38,
+        "cur": "USD",
+        "lt": 18,
+        "st": 5248,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 4.0924,
+        "cur": "USD",
+        "lt": 18,
+        "st": 5248,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 3.74023,
+        "cur": "USD",
+        "lt": 18,
+        "st": 5248,
+        "note": "包裝 Tray・級距 640+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   },
   {
     "id": "GD32F103C8T6",
