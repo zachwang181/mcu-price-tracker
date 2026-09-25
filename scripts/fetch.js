@@ -80,14 +80,18 @@ async function main() {
     }
     const found = list.filter(r => r.found);
     const errors = list.filter(r => r.error).map(r => ({ mpn: r.mpn, message: r.error }));
-    const notFound = list.filter(r => !r.found && !r.error).map(r => r.mpn);
+    const missed = list.filter(r => !r.found && !r.error);
+    const notFound = missed.map(r => r.mpn);
+    // 查無但對方有相近料號時記下來，網頁會提示使用者該把料號改成什麼。
+    const nearMisses = {};
+    for (const r of missed) if ((r.suggestions || []).length) nearMisses[r.mpn] = r.suggestions;
     results.push(...found);
     if (dump) for (const r of list) rawDump[`${s.key}:${r.mpn}`] = r.rawResponse ?? { error: r.error };
     const status = errors.length === list.length ? "failed" : errors.length ? "partial" : "ok";
     report.push({
       name, key: s.key, status, configured: true,
       found: found.length, notFound: notFound.length, failed: errors.length,
-      notFoundMpns: notFound, errors,
+      notFoundMpns: notFound, nearMisses, errors,
     });
     console.log(`- ${name}：抓到 ${found.length}、查無 ${notFound.length}、失敗 ${errors.length}`);
     for (const e of errors) console.log(`    ! ${e.mpn}：${e.message}`);

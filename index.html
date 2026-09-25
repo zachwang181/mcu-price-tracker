@@ -640,8 +640,14 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     const obs = [...(part.obs || [])].sort((a, b) => (b.d || "").localeCompare(a.d || ""));
     let h = `<thead><tr><th>日期</th><th>來源</th><th>類型</th><th class="n">買量</th><th class="n">單價</th><th class="n">交期</th><th class="n">庫存</th><th>備註</th><th></th></tr></thead><tbody>`;
     if (!obs.length) {
-      const nf = notFoundFor(part.mpn);
-      h += `<tr><td colspan="9" class="muted">${nf.length ? `最近一次抓價時，${esc(nf.join("、"))} 查無這顆料號。可以按右下「記一筆報價」自己記一筆代理商報價。` : "這顆料號還沒有報價。按右下「記一筆報價」開始。"}</td></tr>`;
+      const nf = notFoundFor(part.mpn), near = nearMissesFor(part.mpn);
+      let msg;
+      if (!nf.length) msg = "這顆料號還沒有報價。按右下「記一筆報價」開始。";
+      else if (near.length) msg = `最近一次抓價時，${esc(nf.map(x => x.name).join("、"))} 查無這顆料號，但有後綴不同的 <b>${esc(near.join("、"))}</b>。`
+        + `後綴通常代表封裝或溫度等級，價格可能不一樣，所以程式不會自己替你選。要改追蹤哪一個，`
+        + `<a href="${EDIT.parts}" target="_blank" rel="noopener">去改料號清單</a>裡的料號。`;
+      else msg = `最近一次抓價時，${esc(nf.map(x => x.name).join("、"))} 查無這顆料號 —— 可能是這些通路沒賣，或料號打錯了。可以按右下「記一筆報價」自己記一筆代理商報價。`;
+      h += `<tr><td colspan="9" class="muted wrap-cell" style="white-space:normal">${msg}</td></tr>`;
     }
     for (const o of obs) {
       h += `<tr><td class="n" style="text-align:left">${esc(o.d)}</td><td>${esc(o.src)}</td><td><span class="tk ${esc(o.kind || "")}">${KIND_NAMES[o.kind] || esc(o.kind || "")}</span></td><td class="n">${(+o.q).toLocaleString()}</td><td class="n">${fmtPrice(+o.p, o.cur)}</td>
@@ -690,16 +696,25 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
   $("dlgPart").addEventListener("close", () => { destroy("priceChart"); destroy("leadChart"); });
 
   // ---------- 最近一次抓價 ----------
-  /** 最近一次抓價時，哪些通路查無這顆料號。 */
+  /** 最近一次抓價時查無這顆料號的通路，以及該通路上「料號＋後綴」的相近料號。 */
   function notFoundFor(mpn) {
     const want = String(mpn || "").toUpperCase();
     return ((S.lastRun && S.lastRun.sources) || [])
       .filter(s => (s.notFoundMpns || []).some(m => String(m).toUpperCase() === want))
-      .map(s => s.name);
+      .map(s => ({ name: s.name, near: ((s.nearMisses || {})[mpn]) || [] }));
+  }
+  /** 所有通路提到的相近料號，去重。 */
+  function nearMissesFor(mpn) {
+    const out = [];
+    for (const s of notFoundFor(mpn)) for (const n of s.near) if (!out.includes(n)) out.push(n);
+    return out;
   }
   function notFoundLine(p) {
     const nf = notFoundFor(p.mpn);
-    return nf.length ? `<span class="tk">查無</span> ${esc(nf.join("、"))} 沒有這顆料號` : "還沒有報價";
+    if (!nf.length) return "還沒有報價";
+    const near = nearMissesFor(p.mpn);
+    return `<span class="tk">查無</span> ${esc(nf.map(x => x.name).join("、"))} 沒有這顆料號`
+      + (near.length ? `<span class="ds">通路上有 ${esc(near.join("、"))}</span>` : "");
   }
   function renderRun() {
     const el = $("run"), r = S.lastRun;

@@ -102,6 +102,32 @@ test("Digi-Key：搜尋結果含其他料號時，只取原廠料號完全相符
   assert.equal(digikey.parseResponse(json, "STM32F103C8T7", "USD").found, false);
 });
 
+test("Digi-Key：查無時列出相近料號，但不會自己拿來當價格", () => {
+  const json = {
+    Products: [
+      { ManufacturerProductNumber: "LPC1768FBD100K", ProductVariations: [] },
+      { ManufacturerProductNumber: "LPC1768FBD100Y", ProductVariations: [] },
+      { ManufacturerProductNumber: "LPC1768FBD100,551", ProductVariations: [] },
+      { ManufacturerProductNumber: "MIKROE-4350", ProductVariations: [] },
+    ],
+    ExactMatches: [],
+  };
+  const r = digikey.parseResponse(json, "LPC1768FBD100", "USD");
+  assert.equal(r.found, false, "後綴不同不算抓到 —— 可能是不同封裝或溫度等級");
+  assert.deepEqual(r.suggestions, ["LPC1768FBD100K", "LPC1768FBD100Y", "LPC1768FBD100,551"], "不相干的料號不列入");
+  assert.deepEqual(resultToObs(r, "2026-09-25"), [], "查無就是沒有價格");
+});
+
+test("Mouser：查無時同樣列出相近料號", () => {
+  const json = { Errors: [], SearchResults: { Parts: [
+    { ManufacturerPartNumber: "R7FA4M1AB3CFM#AA0" },
+    { ManufacturerPartNumber: "SOMETHING-ELSE" },
+  ] } };
+  const r = mouser.parseResponse(json, "R7FA4M1AB3CFM", "USD");
+  assert.equal(r.found, false);
+  assert.deepEqual(r.suggestions, ["R7FA4M1AB3CFM#AA0"]);
+});
+
 const mouFile = "mouser-real.json";
 test("Mouser：真實回應的欄位名稱正確", { skip: has(mouFile) ? false : `還沒有 fixtures/${mouFile}` }, () => {
   const dump = load(mouFile);

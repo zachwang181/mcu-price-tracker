@@ -28,6 +28,18 @@ function toPackaging(part) {
   };
 }
 
+/** 查無時列出「我們的料號 + 後綴」的候選，只用來提示，不會自動採用。 */
+function suggestions(parts, mpn) {
+  const want = normMpn(mpn);
+  const out = [];
+  for (const p of parts || []) {
+    const n = p.ManufacturerPartNumber;
+    if (!n || normMpn(n) === want || !normMpn(n).startsWith(want)) continue;
+    if (!out.includes(n)) out.push(n);
+  }
+  return out.slice(0, 4);
+}
+
 async function fetchPart(mpn, ctx) {
   const res = await fetch(`${SEARCH_URL}?apiKey=${encodeURIComponent(ctx.apiKey)}`, {
     method: "POST",
@@ -47,9 +59,9 @@ function parseResponse(json, mpn, fallbackCurrency = "USD") {
   if (errs.length) throw new Error(errs.join("; ").slice(0, 300));
 
   const want = normMpn(mpn);
-  const parts = ((json.SearchResults && json.SearchResults.Parts) || [])
-    .filter(p => normMpn(p.ManufacturerPartNumber) === want);
-  if (!parts.length) return { found: false, source: SOURCE, mpn, rawResponse: json };
+  const all = (json.SearchResults && json.SearchResults.Parts) || [];
+  const parts = all.filter(p => normMpn(p.ManufacturerPartNumber) === want);
+  if (!parts.length) return { found: false, source: SOURCE, mpn, suggestions: suggestions(all, mpn), rawResponse: json };
 
   const packagings = parts.map(toPackaging).filter(p => p.breaks.length);
   if (!packagings.length) return { found: false, source: SOURCE, mpn, reason: "沒有價格級距（可能缺貨或需洽詢）", rawResponse: json };
@@ -91,4 +103,4 @@ async function fetchAll(mpns, e, opts = {}) {
   return out;
 }
 
-module.exports = { SOURCE, configured, fetchPart, fetchAll, toPackaging, parseResponse };
+module.exports = { SOURCE, configured, fetchPart, fetchAll, toPackaging, parseResponse, suggestions };

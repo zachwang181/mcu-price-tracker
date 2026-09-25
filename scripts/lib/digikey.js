@@ -59,6 +59,24 @@ function pickProduct(json, mpn) {
   return null;
 }
 
+/**
+ * 沒有完全相符時，找出「我們的料號 + 後綴」的候選，例如
+ * LPC1768FBD100 → LPC1768FBD100K、R7FA4M1AB3CFM → R7FA4M1AB3CFM#AA0。
+ * 只用來提示使用者去改料號清單，不會自己拿來當成抓到的價格 —— 不同後綴
+ * 可能是不同封裝或溫度等級，價格也不一樣，不能替使用者決定。
+ */
+function suggestions(json, mpn) {
+  const want = normMpn(mpn);
+  const all = [...(json.ExactMatches || []), ...(json.Products || [])];
+  const out = [];
+  for (const p of all) {
+    const n = p.ManufacturerProductNumber;
+    if (!n || normMpn(n) === want || !normMpn(n).startsWith(want)) continue;
+    if (!out.includes(n)) out.push(n);
+  }
+  return out.slice(0, 4);
+}
+
 /** 回傳 { found, source, mpn, manufacturer, currency, leadWeeks, stock, url, packagings, rawResponse }。 */
 async function fetchPart(mpn, ctx) {
   const currency = ctx.currency || "USD";
@@ -83,7 +101,7 @@ async function fetchPart(mpn, ctx) {
 /** 純函式：把一份 Digi-Key 回應轉成我們的中間格式。單元測試直接餵存下來的真實回應。 */
 function parseResponse(json, mpn, currency = "USD") {
   const product = pickProduct(json, mpn);
-  if (!product) return { found: false, source: SOURCE, mpn, rawResponse: json };
+  if (!product) return { found: false, source: SOURCE, mpn, suggestions: suggestions(json, mpn), rawResponse: json };
 
   return {
     found: true,
@@ -121,4 +139,4 @@ async function fetchAll(mpns, e, opts = {}) {
   return out;
 }
 
-module.exports = { SOURCE, configured, getToken, fetchPart, fetchAll, toPackagings, pickProduct, parseResponse };
+module.exports = { SOURCE, configured, getToken, fetchPart, fetchAll, toPackagings, pickProduct, parseResponse, suggestions };
