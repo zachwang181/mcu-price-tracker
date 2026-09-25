@@ -14,6 +14,10 @@ on:
         description: "抓料號清單的前幾顆"
         required: false
         default: "4"
+      mpns:
+        description: "只抓這幾顆料號（逗號隔開），填了就蓋過 limit"
+        required: false
+        default: ""
 
 permissions:
   contents: read
@@ -34,6 +38,7 @@ jobs:
         run: |
           node scripts/fetch.js --dry \
             --limit=${{ inputs.limit }} \
+            ${{ inputs.mpns != '' && format('--mpns={0}', inputs.mpns) || '' }} \
             ${{ inputs.source != '' && format('--only={0}', inputs.source) || '' }} \
             --dump=raw-dump.json
       - uses: actions/upload-artifact@v4

@@ -6,6 +6,7 @@
  *   node scripts/fetch.js --only=mouser   # 只跑一家
  *   node scripts/fetch.js --dry           # 只印結果，不寫檔
  *   node scripts/fetch.js --limit=2       # 只抓前兩顆料號（試接 API 時用）
+ *   node scripts/fetch.js --mpns=A,B      # 只抓指定料號，查「為什麼查無」時用
  *   node scripts/fetch.js --dump=out.json # 另外存一份原始回應，驗欄位名稱用
  * API key 一律從環境變數讀，不會寫進任何輸出檔。
  */
@@ -47,7 +48,10 @@ async function main() {
   const manualRows = readCsv(path.join(DATA, "manual_quotes.csv"));
   const existingParts = readJson(path.join(DATA, "parts.json"), []);
   let mpns = partsListRows.map(r => (r.mpn || "").trim()).filter(Boolean);
-  if (limit) mpns = mpns.slice(0, limit);
+  // --mpns=A,B 只抓指定的幾顆，查「為什麼這顆查無」時很好用。
+  const only_mpns = String(arg("mpns", "") === true ? "" : arg("mpns", "")).split(",").map(s => s.trim()).filter(Boolean);
+  if (only_mpns.length) mpns = only_mpns;
+  else if (limit) mpns = mpns.slice(0, limit);
   console.log(`日期 ${dateTW}・料號 ${mpns.length} 顆`);
 
   const results = [], report = [], rawDump = {};
