@@ -1,5 +1,5 @@
 {
-  "ranAt": "2026-09-25T19:13:35.024Z",
+  "ranAt": "2026-09-25T23:57:55.563Z",
   "dateTW": "2026-09-26",
   "sources": [
     {
@@ -35,11 +35,17 @@
       ],
       "nearMisses": {},
       "errors": []
+    },
+    {
+      "name": "LCSC",
+      "key": "lcsc",
+      "status": "skipped",
+      "configured": false,
+      "reason": "沒有設定 LCSC_API_KEY / LCSC_API_SECRET"
     }
   ],
   "parts": 13,
-  "newObs": 0,
+  "newObs": 54,
   "problems": [],
-  "ok": true,
-  "rebuiltAt": "2026-09-25T23:56:59.019Z"
+  "ok": true
 }

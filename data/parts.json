@@ -176,7 +176,37 @@
         "note": "包裝 511-STM32F103C8T6・級距 1000+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "ARM Cortex-M3",
+      "bits": "32-Bit",
+      "speed": "72MHz",
+      "flash": "64KB",
+      "flashType": "FLASH",
+      "ram": "20KB",
+      "io": 37,
+      "package": "48-LQFP",
+      "mount": "Surface Mount",
+      "voltage": "2V ~ 3.6V",
+      "temp": "-40°C ~ 85°C (TA)",
+      "connectivity": "CANbus, I2C, IrDA, LINbus, SPI, UART/USART, USB",
+      "peripherals": "DMA, Motor Control PWM, PDR, POR, PVD, PWM, Temp Sensor, WDT",
+      "adc": "A/D 10x12b",
+      "desc": "IC MCU 32BIT 64KB FLASH 48LQFP",
+      "datasheet": "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/STMicroelectronics/STM32F103C8T6?qs=bhCVus9SdFtq6kqxsU5%2FDA%3D%3D"
+    }
   },
   {
     "id": "STM32G030F6P6",
@@ -303,7 +333,37 @@
         "note": "包裝 511-STM32G030F6P6・級距 1000+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "ARM Cortex-M0+",
+      "bits": "32-Bit",
+      "speed": "64MHz",
+      "flash": "32KB",
+      "flashType": "FLASH",
+      "ram": "8KB",
+      "io": 17,
+      "package": "20-TSSOP (0.173\", 4.40mm Width)",
+      "mount": "Surface Mount",
+      "voltage": "2V ~ 3.6V",
+      "temp": "-40°C ~ 85°C (TA)",
+      "connectivity": "I2C, IrDA, LINbus, SPI, SmartCard, UART/USART",
+      "peripherals": "DMA, I2S, POR, PWM, WDT",
+      "adc": "A/D 13x12b",
+      "desc": "IC MCU 32BIT 32KB FLASH 20TSSOP",
+      "datasheet": "https://www.st.com/resource/en/datasheet/stm32g030c6.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/STMicroelectronics/STM32G030F6P6?qs=uwxL4vQweFOQRcVHghCbHA%3D%3D"
+    }
   },
   {
     "id": "ATMEGA328P-AU",
@@ -361,7 +421,7 @@
         "p": 2.66,
         "cur": "USD",
         "lt": 27,
-        "st": 27749,
+        "st": 27699,
         "note": "包裝 Tray・級距 1+・自動抓取",
         "origin": "auto"
       },
@@ -374,7 +434,7 @@
         "p": 2.2,
         "cur": "USD",
         "lt": 27,
-        "st": 27749,
+        "st": 27699,
         "note": "包裝 Tray・級距 100+・自動抓取",
         "origin": "auto"
       },
@@ -387,7 +447,7 @@
         "p": 2.2,
         "cur": "USD",
         "lt": 27,
-        "st": 27749,
+        "st": 27699,
         "note": "包裝 Tray・級距 100+・自動抓取",
         "origin": "auto"
       },
@@ -430,7 +490,38 @@
         "note": "包裝 556-ATMEGA328P-AU・級距 100+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "AVR",
+      "bits": "8-Bit",
+      "speed": "20MHz",
+      "flash": "32KB",
+      "flashType": "FLASH",
+      "ram": "2KB",
+      "eeprom": "1KB",
+      "io": 23,
+      "package": "32-TQFP",
+      "mount": "Surface Mount",
+      "voltage": "1.8V ~ 5.5V",
+      "temp": "-40°C ~ 85°C (TA)",
+      "connectivity": "I2C, SPI, UART/USART",
+      "peripherals": "Brown-out Detect/Reset, POR, PWM, WDT",
+      "adc": "A/D 8x10b",
+      "desc": "IC MCU 8BIT 32KB FLASH 32TQFP",
+      "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/Microchip-Technology/ATMEGA328P-AU?qs=K8BHR703ZXiCmmgp6%2FGNmQ%3D%3D"
+    }
   },
   {
     "id": "ATSAMD21G18A-AU",
@@ -596,7 +687,37 @@
         "note": "包裝 556-ATSAMD21G18A-AU・級距 100+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "ARM Cortex-M0+",
+      "bits": "32-Bit",
+      "speed": "48MHz",
+      "flash": "256KB",
+      "flashType": "FLASH",
+      "ram": "32KB",
+      "io": 38,
+      "package": "48-TQFP",
+      "mount": "Surface Mount",
+      "voltage": "1.62V ~ 3.6V",
+      "temp": "-40°C ~ 85°C (TA)",
+      "connectivity": "I2C, LINbus, SPI, UART/USART, USB",
+      "peripherals": "Brown-out Detect/Reset, DMA, I2S, POR, PWM, WDT",
+      "adc": "A/D 14x12b; D/A 1x10b",
+      "desc": "IC MCU 32BIT 256KB FLASH 48TQFP",
+      "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-DA1-Family-Data-Sheet-DS40001882H.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/microchip-technology/ATSAMD21G18A-AU/5056473",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/Microchip-Technology/ATSAMD21G18A-AU?qs=KLFHFgXTQiDh1vL0VLU76Q%3D%3D"
+    }
   },
   {
     "id": "MKL25Z128VLK4",
@@ -723,7 +844,37 @@
         "note": "包裝 841-MKL25Z128VLK4・級距 960+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "ARM Cortex-M0+",
+      "bits": "32-Bit",
+      "speed": "48MHz",
+      "flash": "128KB",
+      "flashType": "FLASH",
+      "ram": "16KB",
+      "io": 66,
+      "package": "80-LQFP",
+      "mount": "Surface Mount",
+      "voltage": "1.71V ~ 3.6V",
+      "temp": "-40°C ~ 105°C (TA)",
+      "connectivity": "I2C, LINbus, SPI, UART/USART, USB, USB OTG",
+      "peripherals": "Brown-out Detect/Reset, DMA, LVD, POR, PWM, WDT",
+      "adc": "A/D 14x16b; D/A 1x12b",
+      "desc": "IC MCU 32BIT 128KB FLASH 80FQFP",
+      "datasheet": "https://www.nxp.com/docs/en/data-sheet/KL25P80M48SF0.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/nxp-usa-inc/MKL25Z128VLK4/3608488",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/NXP-Semiconductors/MKL25Z128VLK4?qs=UFwME9ENKRbBwXo%252BZH8TjQ%3D%3D"
+    }
   },
   {
     "id": "LPC1768FBD100K",
@@ -850,7 +1001,37 @@
         "note": "包裝 771-LPC1768FBD100K・級距 450+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "ARM Cortex-M3",
+      "bits": "32-Bit",
+      "speed": "100MHz",
+      "flash": "512KB",
+      "flashType": "FLASH",
+      "ram": "64KB",
+      "io": 70,
+      "package": "100-LQFP",
+      "mount": "Surface Mount",
+      "voltage": "2.4V ~ 3.6V",
+      "temp": "-40°C ~ 85°C (TA)",
+      "connectivity": "CANbus, Ethernet, I2C, IrDA, Microwire, SPI, SSI, UART/USART, USB OTG",
+      "peripherals": "Brown-out Detect/Reset, DMA, I2S, Motor Control PWM, POR, PWM, WDT",
+      "adc": "A/D 8x12b; D/A 1x10b",
+      "desc": "IC MCU 32BIT 512KB FLASH 100LQFP",
+      "datasheet": "http://www.nxp.com/docs/en/data-sheet/LPC1769_68_67_66_65_64_63.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/nxp-usa-inc/LPC1768FBD100K/11681534",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/NXP-Semiconductors/LPC1768FBD100K?qs=rkhjVJ6%2F3EKmgfOsfWOk%2Fw%3D%3D"
+    }
   },
   {
     "id": "MSP430G2553IN20",
@@ -977,7 +1158,37 @@
         "note": "包裝 595-MSP430G2553IN20・級距 1000+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "MSP430 CPU16",
+      "bits": "16-Bit",
+      "speed": "16MHz",
+      "flash": "16KB",
+      "flashType": "FLASH",
+      "ram": "512B",
+      "io": 16,
+      "package": "20-DIP (0.300\", 7.62mm)",
+      "mount": "Through Hole",
+      "voltage": "1.8V ~ 3.6V",
+      "temp": "-40°C ~ 85°C (TA)",
+      "connectivity": "I2C, IrDA, LINbus, SCI, SPI, UART/USART",
+      "peripherals": "Brown-out Detect/Reset, DMA, POR, PWM, WDT",
+      "adc": "A/D 8x10b",
+      "desc": "IC MCU 16BIT 16KB FLASH 20DIP",
+      "datasheet": "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fmsp430g2153",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2638885",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/Texas-Instruments/MSP430G2553IN20?qs=cBe3DO7yhR7KujMhn3Ev6Q%3D%3D"
+    }
   },
   {
     "id": "R7FA4M1AB3CFM_AA0",
@@ -1104,7 +1315,38 @@
         "note": "包裝 968-7FA4M1AB3CFM#AA0・級距 480+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "ARM Cortex-M4",
+      "bits": "32-Bit",
+      "speed": "48MHz",
+      "flash": "256KB",
+      "flashType": "FLASH",
+      "ram": "32KB",
+      "eeprom": "8KB",
+      "io": 49,
+      "package": "64-LQFP",
+      "mount": "Surface Mount",
+      "voltage": "1.6V ~ 5.5V",
+      "temp": "-40°C ~ 105°C (TA)",
+      "connectivity": "CANbus, EBI/EMI, I2C, SCI, SPI, UART/USART, USB",
+      "peripherals": "AES, Capacitive Touch, DMA, LVD, POR, PWM, Temp Sensor, TRNG, WDT",
+      "adc": "A/D 18x14b SAR; D/A 1x8b, 2x12b",
+      "desc": "IC MCU 32BIT 256KB FLASH 64LFQFP",
+      "datasheet": "https://www.renesas.com/en/document/dst/ra4m1-group-datasheet",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/renesas-electronics-corporation/R7FA4M1AB3CFM-AA0/10447195",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/Renesas-Electronics/R7FA4M1AB3CFMAA0?qs=d0WKAl%252BL4KbrKuAsyurXHw%3D%3D"
+    }
   },
   {
     "id": "GD32F103C8T6",
@@ -1307,6 +1549,37 @@
         "note": "包裝 503-N76E003AT20・級距 518+・自動抓取",
         "origin": "auto"
       }
-    ]
+    ],
+    "spec": {
+      "categoryPath": [
+        "Integrated Circuits (ICs)",
+        "Embedded",
+        "Microcontrollers"
+      ],
+      "category": "Microcontrollers",
+      "core": "8051",
+      "bits": "8-Bit",
+      "speed": "16MHz",
+      "flash": "18KB",
+      "flashType": "FLASH",
+      "ram": "1KB",
+      "eeprom": "4KB",
+      "io": 18,
+      "package": "20-TSSOP (0.173\", 4.40mm Width)",
+      "mount": "Surface Mount",
+      "voltage": "2.4V ~ 5.5V",
+      "temp": "-40°C ~ 105°C (TA)",
+      "connectivity": "I2C, SPI, UART/USART",
+      "peripherals": "Brown-out Detect/Reset, I2S, POR, PWM, WDT",
+      "adc": "A/D 8x12b",
+      "desc": "IC MCU 8BIT 18KB FLASH 20TSSOP",
+      "datasheet": "https://www.nuvoton.com/export/resource-files/DS_N76E003_EN_Rev1.09.pdf",
+      "src": "Digi-Key",
+      "d": "2026-09-26"
+    },
+    "links": {
+      "Digi-Key": "https://www.digikey.com/en/products/detail/nuvoton-technology-corporation/N76E003AT20/8747842",
+      "Mouser": "https://www.mouser.tw/zh/ProductDetail/Nuvoton/N76E003AT20?qs=A6eO%252BMLsxmTw2Fm3XoUzRQ%3D%3D"
+    }
   }
 ]

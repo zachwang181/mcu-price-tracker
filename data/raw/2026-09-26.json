@@ -87,14 +87,14 @@
     "manufacturer": "Microchip Technology",
     "currency": "USD",
     "leadWeeks": 27,
-    "stock": 27749,
+    "stock": 27699,
     "url": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
     "packagings": [
       {
         "name": "Tray",
         "code": "ATMEGA328P-AU-ND",
         "moq": 1,
-        "stock": 27749,
+        "stock": 27699,
         "breaks": [
           {
             "qty": 1,
