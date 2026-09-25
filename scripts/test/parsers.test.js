@@ -145,6 +145,38 @@ test("Mouser：真實回應的欄位名稱正確", { skip: has(mouFile) ? false 
   assert.ok(found, "至少要有一顆料號解析成功");
 });
 
+test("Mouser：真實回應解出來的數字，逐項對過", { skip: has(mouFile) ? false : `還沒有 fixtures/${mouFile}` }, () => {
+  const dump = load(mouFile);
+  const r = mouser.parseResponse(dump["mouser:STM32F103C8T6"], "STM32F103C8T6", "USD");
+  assert.equal(r.manufacturer, "STMicroelectronics");
+  assert.equal(r.currency, "USD");
+  assert.equal(r.stock, 6344, '台灣帳號的 Availability 長這樣："6344 庫存量"');
+  assert.equal(r.leadWeeks, 40, 'LeadTime 是中文的 "280 日數"，280 天要換成 40 週');
+  assert.equal(r.packagings[0].moq, 1);
+  assert.equal(r.packagings[0].code, "511-STM32F103C8T6");
+  assert.deepEqual(r.packagings[0].breaks.map(b => b.qty), [1, 10, 25, 100, 250, 500, 1000, 1500]);
+  assert.deepEqual(resultToObs(r, "2026-09-26").map(o => [o.q, o.p]), [[1, 7.96], [100, 4.52], [1000, 4.16]],
+    'Price 是帶錢字號的字串 "$4.16"，要轉成數字');
+
+  const nuvoton = mouser.parseResponse(dump["mouser:N76E003AT20"], "N76E003AT20", "USD");
+  assert.deepEqual(resultToObs(nuvoton, "2026-09-26").map(o => [o.q, o.p]), [[1, 0.83], [100, 0.571], [1000, 0.518]]);
+
+  const atmega = mouser.parseResponse(dump["mouser:ATMEGA328P-AU"], "ATMEGA328P-AU", "USD");
+  assert.equal(atmega.leadWeeks, 9, '"63 日數" → 9 週');
+
+  // 國產料 Mouser 也沒賣
+  assert.equal(mouser.parseResponse(dump["mouser:GD32F103C8T6"], "GD32F103C8T6", "USD").found, false);
+});
+
+test("Mouser 的中文單位（台灣帳號）解析正確", () => {
+  const { leadToWeeks, parseCount } = require("../lib/util");
+  assert.equal(leadToWeeks("280 日數"), 40);
+  assert.equal(leadToWeeks("63 日數"), 9);
+  assert.equal(leadToWeeks("12 週數"), 12);
+  assert.equal(parseCount("6344 庫存量"), 6344);
+  assert.equal(parseCount("1,227 庫存量"), 1227);
+});
+
 test("查無的料號不會讓程式壞掉", () => {
   assert.equal(digikey.parseResponse({ Products: [], ExactMatches: [] }, "NOPE").found, false);
   assert.equal(mouser.parseResponse({ Errors: [], SearchResults: { Parts: [] } }, "NOPE").found, false);
