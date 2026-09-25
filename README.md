@@ -4,6 +4,8 @@
 
 每天台灣時間早上 9 點，程式會自己去 Digi-Key 和 Mouser 抓一次這些料號的目錄價，存進這個 repo，網頁就會跟著更新。你不用開終端機，所有事情都在 GitHub 網頁上做。
 
+目前追蹤 13 顆料號，Digi-Key 和 Mouser 各抓得到其中 9 顆。抓不到的 4 顆（GD32F103C8T6、GD32F303RCT6、CH32V003F4P6、CH32F103C8T6）是國產料，這兩家通路本來就沒賣。
+
 ---
 
 ## 我要做的四件事
@@ -67,6 +69,14 @@
 
 ---
 
+## 已知限制
+
+- **國產料抓不到。** GD32、WCH、國民技術這類料號 Digi-Key 和 Mouser 都沒賣，只能靠手動記在 `manual_quotes.csv`，或日後接上 LCSC 的報價（Nexar／Octopart API，或 LCSC 官方 API）。接的時候不需要改網頁，只要在 `scripts/lib/` 下多一個資料源檔案。
+- **料號後綴要完全相符。** 通路的料號常有後綴，例如 `LPC1768FBD100` 在 Digi-Key 上是 `LPC1768FBD100K`、`R7FA4M1AB3CFM` 是 `R7FA4M1AB3CFM#AA0`。後綴可能代表不同封裝或溫度等級、價格也不一樣，所以程式**不會自己替你挑**，只會在料號卡片上列出通路有哪些相近料號，由你決定要追哪一個。
+- **價格會公開。** 這個 repo 是 public，所以抓到的價格、你記的代理商報價、料號清單都看得到，Google 也可能收錄。Digi-Key 和 Mouser 的 API 條款對「重新散布價格資料」通常有限制；以這個規模、又標明出處，實務上幾乎不會有問題，但嚴格講是灰色地帶。真的在意的話，把 repo 轉成 private 即可（需要 GitHub Pro，約 US$4/月），網頁一樣能發布，程式完全不用改。
+- **排程會晚。** GitHub 的排程在尖峰時段常延遲十幾到幾十分鐘，09:00 只是大約。急著要就自己按一次 Run workflow。
+- **通路目錄價不等於你付的價。** 目錄價含通路加價，也比原廠調價函晚反應。真正的採購價要靠你記在 `manual_quotes.csv` 的代理商報價和成交價。
+
 ## 出問題的時候
 
 網頁最上面有一條**「最近一次抓價」**，會寫清楚每家通路抓到幾顆、查無幾顆、失敗幾顆。
@@ -96,7 +106,9 @@
 | `DIGIKEY_CLIENT_ID` / `DIGIKEY_CLIENT_SECRET` | Digi-Key Product Information API v4 |
 | `MOUSER_API_KEY` | Mouser Search API |
 
-沒設定的資料源會自動略過，不會讓執行失敗。
+沒設定的資料源會自動略過，不會讓執行失敗。設了 key 卻全部失敗時，Actions 會顯示紅色叉叉，網頁上的「最近一次抓價」也會變紅並寫出原因。
+
+兩家回的幣別都是 **USD**（Mouser 是申請 API 時選的）。程式一律照回傳的幣別記錄，不做任何換算；日後如果某個來源改成台幣，網頁會自動用右邊第二條 Y 軸分開畫。
 
 ## 給工程師
 
@@ -105,4 +117,9 @@ npm test                        # 單元測試
 node scripts/fetch.js --dry     # 抓價但不寫檔
 node scripts/fetch.js --no-fetch  # 不呼叫 API，只用 CSV 重建 parts.json
 node scripts/fetch.js --limit=3 --dump=out.json   # 存下原始回應，驗欄位名稱用
+node scripts/fetch.js --mpns=STM32F103C8T6        # 只抓指定料號，追查「為什麼查無」
 ```
+
+欄位名稱以 `scripts/test/fixtures/` 底下的**真實 API 回應**為準（2026-09-25 實際呼叫存下來的），測試會拿它們驗。要重抓一份，在 Actions 頁跑 **抓原始回應（除錯用）** 這個 workflow，下載 `raw-dump` 成品。
+
+兩個 workflow：`update.yml` 是每天抓價＋發布網站（排程、手動、以及 push 到 main 時；push 觸發的那次只重建資料不呼叫 API），`capture.yml` 是手動抓原始回應除錯用。
