@@ -20,6 +20,45 @@
         "origin": "manual"
       },
       {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 8.24,
+        "cur": "USD",
+        "lt": 40,
+        "st": 7658,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 5.3473,
+        "cur": "USD",
+        "lt": 40,
+        "st": 7658,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 4.94928,
+        "cur": "USD",
+        "lt": 40,
+        "st": 7658,
+        "note": "包裝 Tray・級距 500+・自動抓取",
+        "origin": "auto"
+      },
+      {
         "id": "lcsc0925a",
         "d": "2026-09-25",
         "src": "LCSC",
@@ -66,7 +105,47 @@
     "manufacturer": "STMicroelectronics",
     "group": "intl",
     "note": "低價 Cortex-M0+",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 2.18,
+        "cur": "USD",
+        "lt": 52,
+        "st": 74190,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 1.32919,
+        "cur": "USD",
+        "lt": 52,
+        "st": 74190,
+        "note": "包裝 Tray・級距 74+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 1.10917,
+        "cur": "USD",
+        "lt": 52,
+        "st": 74190,
+        "note": "包裝 Tray・級距 518+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   },
   {
     "id": "ATMEGA328P-AU",
@@ -74,7 +153,47 @@
     "manufacturer": "Microchip",
     "group": "intl",
     "note": "8-bit AVR",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 2.66,
+        "cur": "USD",
+        "lt": 27,
+        "st": 27749,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 2.2,
+        "cur": "USD",
+        "lt": 27,
+        "st": 27749,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.2,
+        "cur": "USD",
+        "lt": 27,
+        "st": 27749,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   },
   {
     "id": "ATSAMD21G18A-AU",
@@ -83,6 +202,45 @@
     "group": "intl",
     "note": "Cortex-M0+",
     "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 4.16,
+        "cur": "USD",
+        "lt": 4,
+        "st": 2304,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 3.43,
+        "cur": "USD",
+        "lt": 4,
+        "st": 2304,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 3.43,
+        "cur": "USD",
+        "lt": 4,
+        "st": 2304,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
       {
         "id": "lcsc0925a",
         "d": "2026-09-25",
@@ -130,7 +288,47 @@
     "manufacturer": "NXP",
     "group": "intl",
     "note": "Kinetis Cortex-M0+",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 12.05,
+        "cur": "USD",
+        "lt": 13,
+        "st": 909,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 8.075,
+        "cur": "USD",
+        "lt": 13,
+        "st": 909,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 7.36816,
+        "cur": "USD",
+        "lt": 13,
+        "st": 909,
+        "note": "包裝 Tray・級距 960+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   },
   {
     "id": "LPC1768FBD100",
@@ -146,7 +344,47 @@
     "manufacturer": "Texas Instruments",
     "group": "intl",
     "note": "16-bit",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 4.42,
+        "cur": "USD",
+        "lt": 16,
+        "st": 343,
+        "note": "包裝 Tube・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 2.7809,
+        "cur": "USD",
+        "lt": 16,
+        "st": 343,
+        "note": "包裝 Tube・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.55476,
+        "cur": "USD",
+        "lt": 16,
+        "st": 343,
+        "note": "包裝 Tube・級距 500+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   },
   {
     "id": "R7FA4M1AB3CFM",
@@ -234,6 +472,46 @@
     "manufacturer": "Nuvoton",
     "group": "tw",
     "note": "8051",
-    "obs": []
+    "obs": [
+      {
+        "id": "auto-digi-key-2026-09-25-1",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 0.83,
+        "cur": "USD",
+        "lt": 32,
+        "st": 2742,
+        "note": "包裝 Tube・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-100",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 0.60514,
+        "cur": "USD",
+        "lt": 32,
+        "st": 2742,
+        "note": "包裝 Tube・級距 74+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-09-25-1000",
+        "d": "2026-09-25",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 0.5189,
+        "cur": "USD",
+        "lt": 32,
+        "st": 2742,
+        "note": "包裝 Tube・級距 518+・自動抓取",
+        "origin": "auto"
+      }
+    ]
   }
 ]

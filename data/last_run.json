@@ -1,13 +1,24 @@
 {
-  "ranAt": "2026-09-25T05:35:47.835Z",
+  "ranAt": "2026-09-25T12:32:15.876Z",
   "dateTW": "2026-09-25",
   "sources": [
     {
       "name": "Digi-Key",
       "key": "digikey",
-      "status": "skipped",
-      "configured": false,
-      "reason": "沒有設定 DIGIKEY_CLIENT_ID / DIGIKEY_CLIENT_SECRET"
+      "status": "ok",
+      "configured": true,
+      "found": 7,
+      "notFound": 6,
+      "failed": 0,
+      "notFoundMpns": [
+        "LPC1768FBD100",
+        "R7FA4M1AB3CFM",
+        "GD32F103C8T6",
+        "GD32F303RCT6",
+        "CH32V003F4P6",
+        "CH32F103C8T6"
+      ],
+      "errors": []
     },
     {
       "name": "Mouser",
@@ -18,8 +29,7 @@
     }
   ],
   "parts": 13,
-  "newObs": 0,
+  "newObs": 21,
   "problems": [],
-  "ok": true,
-  "rebuiltAt": "2026-09-25T12:31:14.699Z"
+  "ok": true
 }
