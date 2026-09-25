@@ -68,6 +68,40 @@ test("Digi-Key：真實回應的欄位名稱正確", { skip: has(dkFile) ? false
   assert.ok(found, "至少要有一顆料號解析成功");
 });
 
+test("Digi-Key：真實回應解出來的數字，逐項對過", { skip: has(dkFile) ? false : `還沒有 fixtures/${dkFile}` }, () => {
+  const dump = load(dkFile);
+  const r = digikey.parseResponse(dump["digikey:STM32F103C8T6"], "STM32F103C8T6", "USD");
+  assert.equal(r.manufacturer, "STMicroelectronics");
+  assert.equal(r.leadWeeks, 40, "ManufacturerLeadWeeks 是字串 \"40\"，要轉成數字");
+  assert.equal(r.stock, 7658);
+  assert.equal(r.packagings.length, 1);
+  assert.equal(r.packagings[0].name, "Tray");
+  assert.equal(r.packagings[0].code, "497-6063-ND");
+  assert.deepEqual(r.packagings[0].breaks.map(b => b.qty), [1, 10, 50, 100, 250, 500]);
+  assert.deepEqual(resultToObs(r, "2026-09-25").map(o => [o.q, o.p]), [[1, 8.24], [100, 5.3473], [1000, 4.94928]],
+    "買 1000 顆要取 500 那一階（≤1000 的最大級距）");
+
+  // 級距落在非整數位置：74 和 518
+  const g030 = digikey.parseResponse(dump["digikey:STM32G030F6P6"], "STM32G030F6P6", "USD");
+  assert.deepEqual(g030.packagings[0].breaks.map(b => b.qty), [1, 10, 74, 148, 518]);
+  assert.deepEqual(resultToObs(g030, "2026-09-25").map(o => [o.q, o.p]), [[1, 2.18], [100, 1.32919], [1000, 1.10917]],
+    "買 100 顆取 74 那一階，買 1000 顆取 518 那一階");
+
+  // 最大級距只到 100：買 1000 顆仍然用 100 那一階
+  const atmega = digikey.parseResponse(dump["digikey:ATMEGA328P-AU"], "ATMEGA328P-AU", "USD");
+  assert.deepEqual(atmega.packagings[0].breaks.map(b => b.qty), [1, 25, 100]);
+  assert.deepEqual(resultToObs(atmega, "2026-09-25").map(o => [o.q, o.p]), [[1, 2.66], [100, 2.2], [1000, 2.2]]);
+});
+
+test("Digi-Key：搜尋結果含其他料號時，只取原廠料號完全相符的那筆", { skip: has(dkFile) ? false : `還沒有 fixtures/${dkFile}` }, () => {
+  const dump = load(dkFile);
+  const json = dump["digikey:STM32F103C8T6"];
+  assert.ok(json.Products.length > 1, "這份 fixture 的搜尋結果本來就不只一筆");
+  assert.equal(digikey.parseResponse(json, "STM32F103C8T6", "USD").mpn, "STM32F103C8T6");
+  // 搜尋結果裡的其他料號不會被誤認
+  assert.equal(digikey.parseResponse(json, "STM32F103C8T7", "USD").found, false);
+});
+
 const mouFile = "mouser-real.json";
 test("Mouser：真實回應的欄位名稱正確", { skip: has(mouFile) ? false : `還沒有 fixtures/${mouFile}` }, () => {
   const dump = load(mouFile);

@@ -1,0 +1,1143 @@
+{
+ "digikey:STM32F103C8T6": {
+  "Products": [
+   {
+    "Manufacturer": {
+     "Id": 497,
+     "Name": "STMicroelectronics"
+    },
+    "ManufacturerProductNumber": "STM32F103C8T6",
+    "UnitPrice": 8.24,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "497-6063-ND",
+      "PackageType": {
+       "Id": 17,
+       "Name": "Tray"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 8.24,
+        "TotalPrice": 8.24
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 6.342,
+        "TotalPrice": 63.42
+       },
+       {
+        "BreakQuantity": 50,
+        "UnitPrice": 5.5826,
+        "TotalPrice": 279.13
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 5.3473,
+        "TotalPrice": 534.73
+       },
+       {
+        "BreakQuantity": 250,
+        "UnitPrice": 5.09896,
+        "TotalPrice": 1274.74
+       },
+       {
+        "BreakQuantity": 500,
+        "UnitPrice": 4.94928,
+        "TotalPrice": 2474.64
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 7658,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 7658,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 57040,
+     "Name": "STM32F103"
+    },
+    "ManufacturerLeadWeeks": "40",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 497,
+     "Name": "STMicroelectronics"
+    },
+    "ManufacturerProductNumber": "STM32F103C8T6TR",
+    "UnitPrice": 7.3,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6TR/2122442",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "497-17666-2-ND",
+      "PackageType": {
+       "Id": 1,
+       "Name": "Tape & Reel (TR)"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 2400,
+        "UnitPrice": 4.14565,
+        "TotalPrice": 9949.56
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 0,
+      "MaxQuantityForDistribution": 999999999,
+      "MinimumOrderQuantity": 2400,
+      "StandardPackage": 2400,
+      "DigiReelFee": 0
+     },
+     {
+      "DigiKeyProductNumber": "497-17666-1-ND",
+      "PackageType": {
+       "Id": 2,
+       "Name": "Cut Tape (CT)"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 7.3,
+        "TotalPrice": 7.3
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 5.611,
+        "TotalPrice": 56.11
+       },
+       {
+        "BreakQuantity": 50,
+        "UnitPrice": 4.9328,
+        "TotalPrice": 246.64
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 4.7227,
+        "TotalPrice": 472.27
+       },
+       {
+        "BreakQuantity": 500,
+        "UnitPrice": 4.36724,
+        "TotalPrice": 2183.62
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 0,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     },
+     {
+      "DigiKeyProductNumber": "497-17666-6-ND",
+      "PackageType": {
+       "Id": 243,
+       "Name": "Digi-Reel®"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 7.3,
+        "TotalPrice": 7.3
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 5.611,
+        "TotalPrice": 56.11
+       },
+       {
+        "BreakQuantity": 50,
+        "UnitPrice": 4.9328,
+        "TotalPrice": 246.64
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 4.7227,
+        "TotalPrice": 472.27
+       },
+       {
+        "BreakQuantity": 500,
+        "UnitPrice": 4.36724,
+        "TotalPrice": 2183.62
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 0,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 7
+     }
+    ],
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 57040,
+     "Name": "STM32F103"
+    },
+    "ManufacturerLeadWeeks": "40",
+    "ManufacturerPublicQuantity": 0
+   }
+  ],
+  "ProductsCount": 2,
+  "ExactMatches": [
+   {
+    "Manufacturer": {
+     "Id": 497,
+     "Name": "STMicroelectronics"
+    },
+    "ManufacturerProductNumber": "STM32F103C8T6",
+    "UnitPrice": 8.24,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "497-6063-ND",
+      "PackageType": {
+       "Id": 17,
+       "Name": "Tray"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 8.24,
+        "TotalPrice": 8.24
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 6.342,
+        "TotalPrice": 63.42
+       },
+       {
+        "BreakQuantity": 50,
+        "UnitPrice": 5.5826,
+        "TotalPrice": 279.13
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 5.3473,
+        "TotalPrice": 534.73
+       },
+       {
+        "BreakQuantity": 250,
+        "UnitPrice": 5.09896,
+        "TotalPrice": 1274.74
+       },
+       {
+        "BreakQuantity": 500,
+        "UnitPrice": 4.94928,
+        "TotalPrice": 2474.64
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 7658,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 7658,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 57040,
+     "Name": "STM32F103"
+    },
+    "ManufacturerLeadWeeks": "40",
+    "ManufacturerPublicQuantity": 0
+   }
+  ],
+  "SearchLocaleUsed": {
+   "Site": "US",
+   "Language": "en",
+   "Currency": "USD"
+  }
+ },
+ "digikey:STM32G030F6P6": {
+  "Products": [
+   {
+    "Manufacturer": {
+     "Id": 497,
+     "Name": "STMicroelectronics"
+    },
+    "ManufacturerProductNumber": "STM32G030F6P6",
+    "UnitPrice": 2.18,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "497-STM32G030F6P6-ND",
+      "PackageType": {
+       "Id": 17,
+       "Name": "Tray"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 2.18,
+        "TotalPrice": 2.18
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 1.604,
+        "TotalPrice": 16.04
+       },
+       {
+        "BreakQuantity": 74,
+        "UnitPrice": 1.32919,
+        "TotalPrice": 98.36006
+       },
+       {
+        "BreakQuantity": 148,
+        "UnitPrice": 1.26466,
+        "TotalPrice": 187.16968
+       },
+       {
+        "BreakQuantity": 518,
+        "UnitPrice": 1.10917,
+        "TotalPrice": 574.55006
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 74190,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 74190,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 647509,
+     "Name": "STM32G030"
+    },
+    "ManufacturerLeadWeeks": "52",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 2221,
+     "Name": "M5Stack Technology Co., Ltd."
+    },
+    "ManufacturerProductNumber": "M137",
+    "UnitPrice": 24.5,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/M137/22571404",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "2221-M137-ND",
+      "PackageType": {
+       "Id": 804,
+       "Name": "Retail Package"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 24.5,
+        "TotalPrice": 24.5
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 2221,
+       "Name": "M5Stack Technology Co., Ltd."
+      },
+      "QuantityAvailableforPackageType": 229,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 229,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {},
+    "ManufacturerLeadWeeks": "9",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 5141,
+     "Name": "SEQUENT MICROSYSTEMS"
+    },
+    "ManufacturerProductNumber": "SM-I-010",
+    "UnitPrice": 80,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/sequent-microsystems/SM-I-010/20483402",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "5145-SM-I-010-ND",
+      "PackageType": {
+       "Id": 804,
+       "Name": "Retail Package"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 80,
+        "TotalPrice": 80
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": true,
+      "TariffActive": false,
+      "Supplier": {
+       "Id": 5145,
+       "Name": "SEQUENT MICROSYSTEMS"
+      },
+      "QuantityAvailableforPackageType": 95,
+      "MaxQuantityForDistribution": 100,
+      "MinimumOrderQuantity": 1,
+      "StandardPackage": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 95,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": true,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {},
+    "ManufacturerLeadWeeks": "0",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 5141,
+     "Name": "SEQUENT MICROSYSTEMS"
+    },
+    "ManufacturerProductNumber": "SM-I-005",
+    "UnitPrice": 94,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/sequent-microsystems/SM-I-005/20483405",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "5145-SM-I-005-ND",
+      "PackageType": {
+       "Id": 804,
+       "Name": "Retail Package"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 94,
+        "TotalPrice": 94
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 75,
+        "TotalPrice": 750
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": true,
+      "TariffActive": false,
+      "Supplier": {
+       "Id": 5145,
+       "Name": "SEQUENT MICROSYSTEMS"
+      },
+      "QuantityAvailableforPackageType": 50,
+      "MaxQuantityForDistribution": 10,
+      "MinimumOrderQuantity": 1,
+      "StandardPackage": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 50,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": true,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {},
+    "ManufacturerLeadWeeks": "0",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 497,
+     "Name": "STMicroelectronics"
+    },
+    "ManufacturerProductNumber": "STM32G030F6P6TR",
+    "UnitPrice": 1.48,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6TR/11591080",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "497-STM32G030F6P6TR-ND",
+      "PackageType": {
+       "Id": 1,
+       "Name": "Tape & Reel (TR)"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 2500,
+        "UnitPrice": 0.72298,
+        "TotalPrice": 1807.45
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 0,
+      "MaxQuantityForDistribution": 7500,
+      "MinimumOrderQuantity": 2500,
+      "StandardPackage": 2500,
+      "DigiReelFee": 0
+     },
+     {
+      "DigiKeyProductNumber": "497-STM32G030F6P6TRCT-ND",
+      "PackageType": {
+       "Id": 2,
+       "Name": "Cut Tape (CT)"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 1.48,
+        "TotalPrice": 1.48
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 1.076,
+        "TotalPrice": 10.76
+       },
+       {
+        "BreakQuantity": 50,
+        "UnitPrice": 0.9132,
+        "TotalPrice": 45.66
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 0.8627,
+        "TotalPrice": 86.27
+       },
+       {
+        "BreakQuantity": 500,
+        "UnitPrice": 0.77734,
+        "TotalPrice": 388.67
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 84,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     },
+     {
+      "DigiKeyProductNumber": "497-STM32G030F6P6TRDKR-ND",
+      "PackageType": {
+       "Id": 243,
+       "Name": "Digi-Reel®"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 1.48,
+        "TotalPrice": 1.48
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 1.076,
+        "TotalPrice": 10.76
+       },
+       {
+        "BreakQuantity": 50,
+        "UnitPrice": 0.9132,
+        "TotalPrice": 45.66
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 0.8627,
+        "TotalPrice": 86.27
+       },
+       {
+        "BreakQuantity": 500,
+        "UnitPrice": 0.77734,
+        "TotalPrice": 388.67
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 84,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 7
+     }
+    ],
+    "QuantityAvailable": 84,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 647509,
+     "Name": "STM32G030"
+    },
+    "ManufacturerLeadWeeks": "52",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 2221,
+     "Name": "M5Stack Technology Co., Ltd."
+    },
+    "ManufacturerProductNumber": "U024-V2",
+    "UnitPrice": 4.95,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/U024-V2/25600002",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "2221-U024-V2-ND",
+      "PackageType": {
+       "Id": 804,
+       "Name": "Retail Package"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 4.95,
+        "TotalPrice": 4.95
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 2221,
+       "Name": "M5Stack Technology Co., Ltd."
+      },
+      "QuantityAvailableforPackageType": 31,
+      "MaxQuantityForDistribution": 999999999,
+      "MinimumOrderQuantity": 1,
+      "StandardPackage": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 31,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {},
+    "ManufacturerLeadWeeks": "9",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 2221,
+     "Name": "M5Stack Technology Co., Ltd."
+    },
+    "ManufacturerProductNumber": "A176",
+    "UnitPrice": 24.94,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/A176/29822155",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "2221-A176-ND",
+      "PackageType": {
+       "Id": 3,
+       "Name": "Bulk"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 24.94,
+        "TotalPrice": 24.94
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 2221,
+       "Name": "M5Stack Technology Co., Ltd."
+      },
+      "QuantityAvailableforPackageType": 24,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 24,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {},
+    "ManufacturerLeadWeeks": "9",
+    "ManufacturerPublicQuantity": 0
+   }
+  ],
+  "ProductsCount": 7,
+  "ExactMatches": [
+   {
+    "Manufacturer": {
+     "Id": 497,
+     "Name": "STMicroelectronics"
+    },
+    "ManufacturerProductNumber": "STM32G030F6P6",
+    "UnitPrice": 2.18,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "497-STM32G030F6P6-ND",
+      "PackageType": {
+       "Id": 17,
+       "Name": "Tray"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 2.18,
+        "TotalPrice": 2.18
+       },
+       {
+        "BreakQuantity": 10,
+        "UnitPrice": 1.604,
+        "TotalPrice": 16.04
+       },
+       {
+        "BreakQuantity": 74,
+        "UnitPrice": 1.32919,
+        "TotalPrice": 98.36006
+       },
+       {
+        "BreakQuantity": 148,
+        "UnitPrice": 1.26466,
+        "TotalPrice": 187.16968
+       },
+       {
+        "BreakQuantity": 518,
+        "UnitPrice": 1.10917,
+        "TotalPrice": 574.55006
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 497,
+       "Name": "STMicroelectronics"
+      },
+      "QuantityAvailableforPackageType": 74190,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 74190,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 647509,
+     "Name": "STM32G030"
+    },
+    "ManufacturerLeadWeeks": "52",
+    "ManufacturerPublicQuantity": 0
+   }
+  ],
+  "SearchLocaleUsed": {
+   "Site": "US",
+   "Language": "en",
+   "Currency": "USD"
+  }
+ },
+ "digikey:ATMEGA328P-AU": {
+  "Products": [
+   {
+    "Manufacturer": {
+     "Id": 150,
+     "Name": "Microchip Technology"
+    },
+    "ManufacturerProductNumber": "ATMEGA328P-AU",
+    "UnitPrice": 2.66,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "ATMEGA328P-AU-ND",
+      "PackageType": {
+       "Id": 17,
+       "Name": "Tray"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 2.66,
+        "TotalPrice": 2.66
+       },
+       {
+        "BreakQuantity": 25,
+        "UnitPrice": 2.44,
+        "TotalPrice": 61
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 2.2,
+        "TotalPrice": 220
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 150,
+       "Name": "Microchip Technology"
+      },
+      "QuantityAvailableforPackageType": 27749,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 27749,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 62003,
+     "Name": "ATMEGA328"
+    },
+    "ManufacturerLeadWeeks": "27",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 150,
+     "Name": "Microchip Technology"
+    },
+    "ManufacturerProductNumber": "ATMEGA328P-AUR",
+    "UnitPrice": 2.74,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AUR/2357086",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "ATMEGA328P-AURTR-ND",
+      "PackageType": {
+       "Id": 1,
+       "Name": "Tape & Reel (TR)"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 2000,
+        "UnitPrice": 2.30001,
+        "TotalPrice": 4600.02
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": false,
+      "Supplier": {
+       "Id": 150,
+       "Name": "Microchip Technology"
+      },
+      "QuantityAvailableforPackageType": 68000,
+      "MaxQuantityForDistribution": 999999999,
+      "MinimumOrderQuantity": 2000,
+      "StandardPackage": 2000,
+      "DigiReelFee": 0
+     },
+     {
+      "DigiKeyProductNumber": "ATMEGA328P-AURCT-ND",
+      "PackageType": {
+       "Id": 2,
+       "Name": "Cut Tape (CT)"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 2.74,
+        "TotalPrice": 2.74
+       },
+       {
+        "BreakQuantity": 25,
+        "UnitPrice": 2.708,
+        "TotalPrice": 67.7
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": false,
+      "Supplier": {
+       "Id": 150,
+       "Name": "Microchip Technology"
+      },
+      "QuantityAvailableforPackageType": 68225,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     },
+     {
+      "DigiKeyProductNumber": "ATMEGA328P-AURDKR-ND",
+      "PackageType": {
+       "Id": 243,
+       "Name": "Digi-Reel®"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 2.74,
+        "TotalPrice": 2.74
+       },
+       {
+        "BreakQuantity": 25,
+        "UnitPrice": 2.708,
+        "TotalPrice": 67.7
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": false,
+      "Supplier": {
+       "Id": 150,
+       "Name": "Microchip Technology"
+      },
+      "QuantityAvailableforPackageType": 68225,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 7
+     }
+    ],
+    "QuantityAvailable": 68225,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 62003,
+     "Name": "ATMEGA328"
+    },
+    "ManufacturerLeadWeeks": "4",
+    "ManufacturerPublicQuantity": 0
+   },
+   {
+    "Manufacturer": {
+     "Id": 150,
+     "Name": "Microchip Technology"
+    },
+    "ManufacturerProductNumber": "ATMEGA328P-AURA0",
+    "UnitPrice": 0,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AURA0/20506609",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "150-ATMEGA328P-AURA0-ND",
+      "PackageType": {
+       "Id": 3,
+       "Name": "Bulk"
+      },
+      "StandardPricing": [],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": false,
+      "Supplier": {
+       "Id": 150,
+       "Name": "Microchip Technology"
+      },
+      "QuantityAvailableforPackageType": 0,
+      "MaxQuantityForDistribution": 999999999,
+      "StandardPackage": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "ProductStatus": {
+     "Id": 1,
+     "Status": "Obsolete"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": false,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 62003,
+     "Name": "ATMEGA328"
+    },
+    "DateLastBuyChance": "2023-07-05T05:00:00+00:00",
+    "ManufacturerLeadWeeks": "52",
+    "ManufacturerPublicQuantity": 0
+   }
+  ],
+  "ProductsCount": 3,
+  "ExactMatches": [
+   {
+    "Manufacturer": {
+     "Id": 150,
+     "Name": "Microchip Technology"
+    },
+    "ManufacturerProductNumber": "ATMEGA328P-AU",
+    "UnitPrice": 2.66,
+    "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
+    "ProductVariations": [
+     {
+      "DigiKeyProductNumber": "ATMEGA328P-AU-ND",
+      "PackageType": {
+       "Id": 17,
+       "Name": "Tray"
+      },
+      "StandardPricing": [
+       {
+        "BreakQuantity": 1,
+        "UnitPrice": 2.66,
+        "TotalPrice": 2.66
+       },
+       {
+        "BreakQuantity": 25,
+        "UnitPrice": 2.44,
+        "TotalPrice": 61
+       },
+       {
+        "BreakQuantity": 100,
+        "UnitPrice": 2.2,
+        "TotalPrice": 220
+       }
+      ],
+      "MyPricing": [],
+      "MarketPlace": false,
+      "TariffActive": true,
+      "Supplier": {
+       "Id": 150,
+       "Name": "Microchip Technology"
+      },
+      "QuantityAvailableforPackageType": 27749,
+      "MinimumOrderQuantity": 1,
+      "DigiReelFee": 0
+     }
+    ],
+    "QuantityAvailable": 27749,
+    "ProductStatus": {
+     "Id": 0,
+     "Status": "Active"
+    },
+    "BackOrderNotAllowed": false,
+    "NormallyStocking": true,
+    "Discontinued": false,
+    "EndOfLife": false,
+    "Ncnr": false,
+    "BaseProductNumber": {
+     "Id": 62003,
+     "Name": "ATMEGA328"
+    },
+    "ManufacturerLeadWeeks": "27",
+    "ManufacturerPublicQuantity": 0
+   }
+  ],
+  "SearchLocaleUsed": {
+   "Site": "US",
+   "Language": "en",
+   "Currency": "USD"
+  }
+ }
+}
