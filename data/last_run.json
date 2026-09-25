@@ -28,7 +28,8 @@
     }
   ],
   "parts": 13,
-  "newObs": 27,
+  "newObs": 0,
   "problems": [],
-  "ok": true
+  "ok": true,
+  "rebuiltAt": "2026-09-25T19:10:30.144Z"
 }
