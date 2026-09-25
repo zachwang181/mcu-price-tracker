@@ -131,6 +131,9 @@ td.wrap-cell { white-space: normal; min-width: 180px; color: var(--ink-2); font-
 .tl-row .date { font-variant-numeric: tabular-nums; font-weight: 500; color: var(--ink-2); white-space: nowrap; }
 .tl-row .date.future { color: var(--up); font-weight: 700; }
 .tl-row .who { font-weight: 700; }
+.tl-row .who button { all: unset; cursor: pointer; font-weight: 700; }
+.tl-row .who button:hover { color: var(--blue); text-decoration: underline; }
+.tl-row .who button:focus-visible { outline: 2px solid var(--blue); }
 .tl-row .what { color: var(--ink-2); font-size: 12.5px; grid-column: 2 / 3; }
 .tl-row .range { font-weight: 700; text-align: right; font-variant-numeric: tabular-nums; }
 .tl-row .src { grid-column: 2 / 5; color: var(--ink-2); font-size: 11.5px; }
@@ -312,7 +315,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
 
   <section class="cat" id="tlSec">
     <h2>調價事件 <span class="nums" id="tlNums"></span></h2>
-    <p class="sub">紅色日期是還沒生效的。原廠名稱跟料號的製造商寫法一致時，會畫在該料號的走勢圖上。</p>
+    <p class="sub">紅色日期是還沒生效的。<b>點原廠名稱</b>可以篩出這家的料號。原廠名稱跟料號的製造商寫法一致時，這個日期會畫成該料號走勢圖上的紅色虛線。</p>
     <div class="timeline" id="timeline"></div>
     <details class="add" id="noticeAdd">
       <summary>新增調價事件</summary>
@@ -668,8 +671,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     $("tlNums").innerHTML = `共 ${S.notices.length} 則` + (fut ? `・<b class="u">${fut} 則未生效</b>` : "") + (S.filter.mfr ? `・目前只顯示 ${esc(S.filter.mfr)}` : "");
     if (!list.length) { $("timeline").innerHTML = `<div class="empty-note">${S.notices.length ? "這家原廠沒有調價記錄。" : "還沒有調價事件。"}</div>`; return; }
     $("timeline").innerHTML = list.map(n => `<div class="tl-row" id="tl-${esc(n.id)}"><div class="date ${n.effective >= today ? "future" : ""}">${esc(n.effective || "")}</div>
-      <div class="who">${esc(n.vendor)}</div><div class="range">${esc(n.range || "")}</div>
-      <div class="del">${S.readOnly ? "" : `<button class="x" type="button" data-del-notice="${esc(n.id)}" aria-label="刪除這個事件">刪除</button>`}</div>
+      <div class="who"><button type="button" data-notice-vendor="${esc(n.vendor)}" data-notice-id="${esc(n.id)}">${esc(n.vendor)}</button></div><div class="range">${esc(n.range || "")}</div>
+      <div class="del"></div>
       <div class="what">${esc(n.scope || "")}${n.announced ? `（${esc(n.announced)} 發函）` : ""}</div>
       ${n.source ? `<div class="src">出處：${esc(n.source)}</div>` : ""}</div>`).join("");
   }
@@ -687,7 +690,8 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
       if (has) { S.filter.group = "all"; S.filter.mfr = v; renderAll(); document.querySelector(".cat").scrollIntoView({ behavior: "smooth" }); return; }
       if (S.filter.mfr) { S.filter.mfr = ""; renderAll(); }
       const row = document.getElementById("tl-" + t.dataset.noticeId);
-      if (row) { row.classList.add("hl"); row.scrollIntoView({ behavior: "smooth", block: "center" }); setTimeout(() => row.classList.remove("hl"), 2400); toast(`料號清單裡還沒有 ${v} 的料號，已跳到這則調價`); }
+      if (row) { row.classList.add("hl"); row.scrollIntoView({ behavior: "smooth", block: "center" }); setTimeout(() => row.classList.remove("hl"), 2400); }
+      toast(`料號清單裡沒有 ${v} 的料號，所以篩不出東西`);
     }
   });
 
