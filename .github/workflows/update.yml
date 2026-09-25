@@ -51,6 +51,10 @@ jobs:
           DIGIKEY_CURRENCY: ${{ vars.DIGIKEY_CURRENCY }}
           DIGIKEY_SITE: ${{ vars.DIGIKEY_SITE }}
           MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
+          LCSC_API_KEY: ${{ secrets.LCSC_API_KEY }}
+          LCSC_API_SECRET: ${{ secrets.LCSC_API_SECRET }}
+          LCSC_BASE_URL: ${{ vars.LCSC_BASE_URL }}
+          LCSC_SIGN_ALGO: ${{ vars.LCSC_SIGN_ALGO }}
         run: node scripts/fetch.js ${{ github.event_name == 'push' && '--no-fetch' || '' }}
 
       - name: 把資料 commit 回 repo

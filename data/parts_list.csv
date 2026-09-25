@@ -1,14 +1,17 @@
-mpn,manufacturer,group,note
-STM32F103C8T6,STMicroelectronics,intl,經典 Cortex-M3，替代料多，適合當基準
-STM32G030F6P6,STMicroelectronics,intl,低價 Cortex-M0+
-ATMEGA328P-AU,Microchip,intl,8-bit AVR
-ATSAMD21G18A-AU,Microchip,intl,Cortex-M0+
-MKL25Z128VLK4,NXP,intl,Kinetis Cortex-M0+
-LPC1768FBD100K,NXP,intl,Cortex-M3
-MSP430G2553IN20,Texas Instruments,intl,16-bit
-R7FA4M1AB3CFM#AA0,Renesas,intl,RA4M1 Cortex-M4
-GD32F103C8T6,GigaDevice,cn,STM32F103 pin-to-pin 替代
-GD32F303RCT6,GigaDevice,cn,Cortex-M4
-CH32V003F4P6,WCH,cn,RISC-V 超低價
-CH32F103C8T6,WCH,cn,STM32F103 替代
-N76E003AT20,Nuvoton,tw,8051
+mpn,manufacturer,group,note,use
+# 一列一顆料號。group 只能填 intl（國際大廠）/ cn（中國品牌）/ tw（台灣品牌）。
+# use 是「這顆料通常用在哪」，通路 API 不提供這種資訊，是人工寫的，看到不對就直接改。
+# 規格（核心、Flash、RAM、封裝、分類）由程式每天自動從通路抓，不用也不要寫在這裡。
+STM32F103C8T6,STMicroelectronics,intl,經典 Cortex-M3，替代料多，適合當基準,泛用工業控制板、3D 列印主板、Blue Pill 開發板。替代料最多，適合當整體行情的基準
+STM32G030F6P6,STMicroelectronics,intl,低價 Cortex-M0+,取代 8-bit 的小腳位低價控制：家電、電源管理、小型感測節點
+ATMEGA328P-AU,Microchip,intl,8-bit AVR,Arduino Uno / Nano 的核心。教學、快速原型、簡單開關與感測控制
+ATSAMD21G18A-AU,Microchip,intl,Cortex-M0+,Arduino Zero、Adafruit Feather 系列。需要原生 USB 的消費性裝置
+MKL25Z128VLK4,NXP,intl,Kinetis Cortex-M0+,FRDM-KL25Z 開發板、馬達控制、電容觸控介面
+LPC1768FBD100K,NXP,intl,Cortex-M3,mbed LPC1768 開發板。需要乙太網或 USB Host 的工業通訊與機器人控制
+MSP430G2553IN20,Texas Instruments,intl,16-bit,超低功耗電池供電感測器、LaunchPad 教學板。DIP 封裝好手焊
+R7FA4M1AB3CFM#AA0,Renesas,intl,RA4M1 Cortex-M4,Arduino Uno R4 的主控。工業感測與人機介面
+GD32F103C8T6,GigaDevice,cn,STM32F103 pin-to-pin 替代,STM32F103 缺料或漲價時的第二來源，腳位相容可直接換
+GD32F303RCT6,GigaDevice,cn,Cortex-M4,中階工業控制、變頻器、數位電源
+CH32V003F4P6,WCH,cn,RISC-V 超低價,目前最便宜的 32-bit MCU 之一。玩具、LED 燈控、小家電的成本底線
+CH32F103C8T6,WCH,cn,STM32F103 替代,STM32F103 的低價替代，成本比 GD32 再低一階
+N76E003AT20,Nuvoton,tw,8051,小家電、電源與馬達驅動的低成本 8-bit 控制

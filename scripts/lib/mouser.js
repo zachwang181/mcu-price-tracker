@@ -1,5 +1,6 @@
 "use strict";
 const { normMpn, leadToWeeks, parseCount, parseMoney, sleep, env } = require("./util");
+const { toSpec } = require("./spec");
 
 const SOURCE = "Mouser";
 const SEARCH_URL = "https://api.mouser.com/api/v1/search/partnumber";
@@ -81,6 +82,7 @@ function parseResponse(json, mpn, fallbackCurrency = "USD") {
     stock: stocks.length ? Math.max(...stocks) : null,
     url: parts[0].ProductDetailUrl || "",
     packagings,
+    spec: toSpec.fromMouser(parts[0]),
     rawResponse: json,
   };
 }

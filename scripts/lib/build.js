@@ -1,11 +1,12 @@
 "use strict";
 const { normMpn, partId, slug, parseCount, parseMoney } = require("./util");
 const { pickAll } = require("./breaks");
+const { pickBest } = require("./spec");
 
 const GROUPS = new Set(["intl", "cn", "tw"]);
 const KINDS = new Set(["catalog", "quote", "po"]);
 
-/** data/parts_list.csv → [{ id, mpn, manufacturer, group, note }]，順便回報壞掉的列。 */
+/** data/parts_list.csv → [{ id, mpn, manufacturer, group, note, use }]，順便回報壞掉的列。 */
 function buildPartsList(rows) {
   const parts = [], problems = [];
   const seen = new Set();
@@ -18,7 +19,11 @@ function buildPartsList(rows) {
     seen.add(id);
     let group = (r.group || "intl").trim();
     if (!GROUPS.has(group)) { problems.push(`parts_list.csv 第 ${line} 列的 group「${group}」不認得，當成 intl`); group = "intl"; }
-    parts.push({ id, mpn, manufacturer: (r.manufacturer || "").trim(), group, note: (r.note || "").trim() });
+    parts.push({
+      id, mpn, manufacturer: (r.manufacturer || "").trim(), group,
+      note: (r.note || "").trim(),
+      use: (r.use || "").trim(),        // 用途，人工維護，API 不提供這種資訊
+    });
   });
   return { parts, problems };
 }
@@ -103,14 +108,36 @@ function buildParts({ partsListRows, manualRows, existingParts, results, dateTW 
 
   // 3. 這次抓到的價格（同 id 覆蓋）
   let added = 0;
+  const specsByPart = new Map();
   for (const r of results || []) {
-    const cur = byId.get(partId(r.mpn));
+    const id = partId(r.mpn);
+    const cur = byId.get(id);
     if (!cur) continue;
+    if (r.spec) {
+      if (!specsByPart.has(id)) specsByPart.set(id, []);
+      specsByPart.get(id).push({ ...r.spec, d: dateTW });
+    }
     for (const obs of resultToObs(r, dateTW)) {
       const at = cur.obs.findIndex(o => o.id === obs.id);
       if (at >= 0) cur.obs[at] = obs; else cur.obs.push(obs);
       added++;
     }
+  }
+
+  // 4. 規格：這次抓到就用這次的（挑欄位最完整的來源），沒抓到就沿用上次的
+  const oldSpecs = new Map((existingParts || []).map(p => [p.id, p.spec]));
+  const oldLinks = new Map((existingParts || []).map(p => [p.id, p.links]));
+  for (const [id, part] of byId) {
+    const fresh = pickBest(specsByPart.get(id) || []);
+    const spec = fresh || oldSpecs.get(id);
+    if (spec) part.spec = spec;
+
+    // 各通路的產品頁連結，舊的留著、這次抓到的覆蓋掉
+    const links = { ...(oldLinks.get(id) || {}) };
+    for (const r of results || []) {
+      if (partId(r.mpn) === id && r.found && r.url) links[r.source] = r.url;
+    }
+    if (Object.keys(links).length) part.links = links;
   }
 
   const out = [...byId.values()].map(p => ({

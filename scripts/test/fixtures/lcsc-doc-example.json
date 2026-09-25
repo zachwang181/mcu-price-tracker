@@ -1,0 +1,44 @@
+{
+  "_source": "LCSC 官方 API 文件（https://wmsc.lcsc.com/crm/download/api/doc）4.1.1 KeywordSearch 的成功回應範例，原樣照抄",
+  "code": 200,
+  "message": "ok",
+  "success": true,
+  "result": {
+    "productCount": 3,
+    "products": [
+      {
+        "lcscProductNumber": "C5353278",
+        "manufacturer": { "id": 13045, "name": "FOSAN" },
+        "manufacturerProductNumber": "SMBJ54A",
+        "package": "SMB",
+        "packageType": "Tape & Reel (TR)",
+        "description": "87.1VC Clamp 6.9A Ipp TVS DIODE SMB",
+        "productDetailURL": "https://fat.lcsc.com/product-detail/C5353278.html",
+        "datasheetURL": "https://fatdatasheet.lcsc.com/datasheet/pdf/c107afcc57be9aa090cd35c8ed89169f.pdf?productCode=C5353278",
+        "category": {
+          "firstCatalogId": 8, "firstCatalogName": "Circuit Protection",
+          "secondCatalogId": 130, "secondCatalogName": "Transient Voltage Suppressors (TVS)",
+          "thirdCatalogId": 702, "thirdCatalogName": "TVS Diodes"
+        },
+        "isInStock": false,
+        "minimumOrderQuantity": 10,
+        "incrementQuantity": 10,
+        "manufacturerStandardPackageQuantity": 3000,
+        "isOnSale": true,
+        "productPrice": {
+          "lcscProductNumber": "C5353278",
+          "manufacturer": { "id": 13045, "name": "FOSAN" },
+          "manufacturerProductNumber": "SMBJ54A",
+          "currency": "USD",
+          "standardPricing": [
+            { "breakQuantity": 10, "unitPrice": 0.0478, "discountRate": 1.0 },
+            { "breakQuantity": 100, "unitPrice": 0.0385, "discountRate": 1.0 }
+          ],
+          "quantityAvailable": 0,
+          "lcscReelAvailable": true,
+          "lcscReelFee": 3.0
+        }
+      }
+    ]
+  }
+}

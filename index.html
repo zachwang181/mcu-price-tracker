@@ -248,6 +248,20 @@ mark { background: var(--mark); color: #15202b; border-radius: 2px; }
   .tl-row .del { grid-column: 2; grid-row: 2; text-align: right; }
   .tl-row .what, .tl-row .src { grid-column: 1 / 3; }
 }
+/* 規格 */
+.kind { display: inline-block; font-size: 11px; font-weight: 500; padding: 0 6px; border-radius: 2px; background: var(--rule); color: var(--ink); vertical-align: 1px; line-height: 1.7; }
+.specbox { margin: 2px 0 14px; padding: 10px 14px; background: var(--bag); border: 1px solid var(--rule); border-radius: 4px; }
+.specbox .use { font-size: 13.5px; margin: 0 0 8px; }
+.specbox .use b { font-weight: 700; }
+.specbox .path { font-size: 12px; color: var(--ink-2); margin: 0 0 8px; }
+.sgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 16px; font-size: 13px; }
+.sgrid div { border-top: 1px dotted var(--rule); padding-top: 4px; }
+.sgrid dt { font-size: 11.5px; color: var(--ink-2); font-weight: 500; }
+.sgrid dd { margin: 0; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.slinks { margin-top: 10px; font-size: 12.5px; display: flex; gap: 14px; flex-wrap: wrap; }
+.slinks a { color: var(--blue); }
+.col li .sp { display: block; font-size: 12px; color: var(--ink-2); line-height: 1.45; }
+
 /* 最近一次抓價 */
 .run { margin-top: 14px; padding: 9px 14px; background: var(--label); border: 1px solid var(--rule); border-left: 4px solid var(--down); border-radius: 4px; font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; }
 .run.bad { border-left-color: var(--up); }
@@ -337,6 +351,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     <div class="meta" id="pMeta"></div>
   </div>
   <div class="dbody">
+    <div id="specSlot"></div>
     <p class="cap">單價　<span class="muted">紅色虛線是這家原廠的調價生效日</span></p>
     <div class="chart-box"><canvas id="priceChart" aria-label="單價走勢"></canvas></div>
     <p class="cap" style="margin-top:14px">原廠交期（週）</p>
@@ -496,7 +511,9 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     if (!ignoreMfr && f.mfr && normMfr(p.manufacturer) !== normMfr(f.mfr)) return false;
     const q = f.q.trim().toLowerCase();
     if (!q) return true;
-    const hay = [p.mpn, p.manufacturer, p.note, ...(p.obs || []).map(o => o.src)].join(" ").toLowerCase();
+    const sp = p.spec || {};
+    const hay = [p.mpn, p.manufacturer, p.note, p.use, sp.category, sp.core, sp.package, sp.desc,
+      ...(sp.categoryPath || []), ...(p.obs || []).map(o => o.src)].filter(Boolean).join(" ").toLowerCase();
     return hay.includes(q);
   }
   function latest(p) { return [...(p.obs || [])].filter(o => o.d).sort((a, b) => b.d.localeCompare(a.d))[0]; }
@@ -504,6 +521,44 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     let best = null;
     for (const s of S.ser.filter(s => s.part.id === p.id)) { const c = change(s); if (c && Math.abs(c.pct) >= 0.03 && (!best || Math.abs(c.pct) > Math.abs(best.c.pct))) best = { s, c }; }
     return best;
+  }
+
+  // ---------- 規格 ----------
+  // 這些欄位由程式每天從通路的回應抓下來，不是人工填的。
+  const SPEC_LABELS = {
+    core: "核心", bits: "位元", speed: "時脈", flash: "程式記憶體", flashType: "記憶體型態",
+    ram: "RAM", eeprom: "EEPROM", io: "I/O 數", package: "封裝", mount: "安裝方式",
+    voltage: "工作電壓", temp: "工作溫度", connectivity: "通訊介面", peripherals: "周邊",
+    adc: "類比轉換",
+  };
+  const SPEC_ORDER = ["core", "bits", "speed", "flash", "ram", "eeprom", "io", "package", "voltage", "temp", "flashType", "mount", "adc", "connectivity", "peripherals"];
+
+  /** 料號清單上那一行短規格，例如「ARM Cortex-M3・72MHz・64KB Flash／20KB RAM・48-LQFP」。 */
+  function specLine(p) {
+    const s = p.spec;
+    if (!s) return "";
+    const mem = [s.flash && `${s.flash} Flash`, s.ram && `${s.ram} RAM`].filter(Boolean).join("／");
+    const bits = s.core ? null : s.bits;   // 有核心名稱就不用再寫位元數
+    return [s.core, bits, s.speed, mem, s.package].filter(Boolean).map(esc).join("・");
+  }
+
+  /** 料號卡片上的「這顆是什麼」。 */
+  function specBox(p) {
+    const s = p.spec;
+    if (!s && !p.use && !p.links) return "";
+    const rows = SPEC_ORDER.filter(k => s && s[k] != null && s[k] !== "")
+      .map(k => `<div><dt>${esc(SPEC_LABELS[k])}</dt><dd>${esc(s[k])}</dd></div>`).join("");
+    const links = [];
+    for (const [name, url] of Object.entries(p.links || {})) links.push(`<a href="${esc(url)}" target="_blank" rel="noopener">${esc(name)} 產品頁 ↗</a>`);
+    if (s && s.datasheet) links.push(`<a href="${esc(s.datasheet)}" target="_blank" rel="noopener">Datasheet ↗</a>`);
+    return `<div class="specbox">`
+      + (p.use ? `<p class="use"><b>用途：</b>${esc(p.use)}</p>` : "")
+      + (s && s.categoryPath && s.categoryPath.length ? `<p class="path">分類：${s.categoryPath.map(esc).join(" › ")}${s.desc ? `　・　${esc(s.desc)}` : ""}</p>` : "")
+      + (rows ? `<dl class="sgrid">${rows}</dl>` : "")
+      + (links.length ? `<div class="slinks">${links.join("")}</div>` : "")
+      + (s ? `<p class="path" style="margin:8px 0 0">規格由程式從 ${esc(s.src)} 抓取${s.d ? `（${esc(s.d)}）` : ""}；用途是人工註記，可在料號清單修改。</p>`
+           : `<p class="path" style="margin:8px 0 0">還沒抓到規格 —— 這顆料號在已啟用的通路上查無。</p>`)
+      + `</div>`;
   }
 
   function renderAll() {
@@ -563,8 +618,9 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
         const o = latest(p), mv = partMove(p);
         const tag = mv ? ` <span class="tk ${mv.c.pct > 0 ? "up" : "down"}">${fmtPct(mv.c.pct)}</span>` : "";
         const line1 = [p.manufacturer, p.note].filter(Boolean).map(hl).join("・");
+        const sp = specLine(p);
         const line2 = o ? `<span class="px">${fmtPrice(+o.p, o.cur)}</span>・${hl(o.src)} ${(+o.q).toLocaleString()} 顆・${md(o.d)}${o.lt != null && o.lt !== "" ? `・交期 ${o.lt} 週` : ""}${(p.obs || []).length > 1 ? `・共 ${p.obs.length} 筆` : ""}` : notFoundLine(p);
-        return `<li><button type="button" data-part="${esc(p.id)}"><span class="nm">${hl(p.mpn)}</span>${tag}<span class="ds">${line1}</span><span class="ds">${line2}</span></button></li>`;
+        return `<li><button type="button" data-part="${esc(p.id)}"><span class="nm">${hl(p.mpn)}</span>${tag}<span class="ds">${line1}</span>${sp ? `<span class="sp">${sp}</span>` : ""}<span class="ds">${line2}</span></button></li>`;
       }).join("");
       return `<div class="col${ps.length ? "" : " empty"}" style="--c:${gcol(g)}"><h3>${esc(GROUP_NAMES[g] || g)}・${ps.length}</h3><ul>${items || "<li>沒有符合條件的料號。</li>"}</ul></div>`;
     }).join("");
@@ -611,7 +667,10 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     if (!part) { $("dlgPart").close(); return; }
     $("pHead").style.setProperty("--c", gcol(part.group || "其他"));
     $("pTitle").textContent = part.mpn;
-    $("pMeta").textContent = [part.manufacturer, GROUP_NAMES[part.group] || part.group, part.note, `${(part.obs || []).length} 筆報價`].filter(Boolean).join("・");
+    $("pMeta").innerHTML = [part.manufacturer, GROUP_NAMES[part.group] || part.group, part.note, `${(part.obs || []).length} 筆報價`]
+      .filter(Boolean).map(esc).join("・")
+      + (part.spec && part.spec.category ? ` <span class="kind">${esc(part.spec.category)}</span>` : "");
+    $("specSlot").innerHTML = specBox(part);
     $("btnAddForPart").href = EDIT.quotes;
     const ss = S.ser.filter(s => s.part.id === part.id);
     const colors = [css("--blue"), css("--teal"), css("--plum"), css("--warn"), css("--ink-2"), css("--ink")];
@@ -748,8 +807,13 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
 
   // ---------- 匯出 CSV（一般下載連結） ----------
   function buildCsv() {
-    const rows = [["date", "mpn", "manufacturer", "group", "source", "kind", "qty", "price", "currency", "lead_weeks", "stock", "origin", "note"]];
-    for (const p of S.parts.values()) for (const o of p.obs || []) rows.push([o.d, p.mpn, p.manufacturer || "", p.group || "", o.src, o.kind || "", o.q, o.p, o.cur, o.lt ?? "", o.st ?? "", o.origin || "", o.note || ""]);
+    const rows = [["date", "mpn", "manufacturer", "group", "category", "core", "speed", "flash", "ram", "package", "use", "source", "kind", "qty", "price", "currency", "lead_weeks", "stock", "origin", "note"]];
+    for (const p of S.parts.values()) {
+      const s = p.spec || {};
+      for (const o of p.obs || []) rows.push([o.d, p.mpn, p.manufacturer || "", p.group || "",
+        s.category || "", s.core || "", s.speed || "", s.flash || "", s.ram || "", s.package || "", p.use || "",
+        o.src, o.kind || "", o.q, o.p, o.cur, o.lt ?? "", o.st ?? "", o.origin || "", o.note || ""]);
+    }
     return "\ufeff" + rows.map(r => r.map(c => { const s = String(c ?? ""); return /[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s; }).join(",")).join("\n");
   }
   function refreshExport() {

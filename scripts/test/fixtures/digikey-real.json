@@ -2,13 +2,17 @@
  "digikey:STM32F103C8T6": {
   "Products": [
    {
+    "Description": {
+     "ProductDescription": "IC MCU 32BIT 64KB FLASH 48LQFP",
+     "DetailedDescription": "ARM® Cortex®-M3 STM32F1 Microcontroller IC 32-Bit 72MHz 64KB (64K x 8) FLASH"
+    },
     "Manufacturer": {
      "Id": 497,
      "Name": "STMicroelectronics"
     },
     "ManufacturerProductNumber": "STM32F103C8T6",
-    "UnitPrice": 8.24,
     "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
+    "DatasheetUrl": "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "497-6063-ND",
@@ -65,26 +69,162 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750491",
+      "ValueText": "Not Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "314890",
+      "ValueText": "ARM® Cortex®-M3"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "188239",
+      "ValueText": "32-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "275575",
+      "ValueText": "72MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "800915",
+      "ValueText": "CANbus, I2C, IrDA, LINbus, SPI, UART/USART, USB"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "339865",
+      "ValueText": "DMA, Motor Control PWM, PDR, POR, PVD, PWM, Temp Sensor, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "37",
+      "ValueText": "37"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "261548",
+      "ValueText": "64KB (64K x 8)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "142947",
+      "ValueText": "20K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "168980",
+      "ValueText": "2V ~ 3.6V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "305817",
+      "ValueText": "A/D 10x12b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "359690",
+      "ValueText": "Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "225910",
+      "ValueText": "48-LQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 57040,
      "Name": "STM32F103"
     },
-    "ManufacturerLeadWeeks": "40",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "40"
    },
    {
+    "Description": {
+     "ProductDescription": "IC MCU 32BIT 64KB FLASH 48LQFP",
+     "DetailedDescription": "ARM® Cortex®-M3 STM32F1 Microcontroller IC 32-Bit 72MHz 64KB (64K x 8) FLASH 48-LQFP (7x7)"
+    },
     "Manufacturer": {
      "Id": 497,
      "Name": "STMicroelectronics"
     },
     "ManufacturerProductNumber": "STM32F103C8T6TR",
-    "UnitPrice": 7.3,
     "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6TR/2122442",
+    "DatasheetUrl": "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "497-17666-2-ND",
@@ -205,29 +345,172 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750491",
+      "ValueText": "Not Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "314890",
+      "ValueText": "ARM® Cortex®-M3"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "188239",
+      "ValueText": "32-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "275575",
+      "ValueText": "72MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "800915",
+      "ValueText": "CANbus, I2C, IrDA, LINbus, SPI, UART/USART, USB"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "339865",
+      "ValueText": "DMA, Motor Control PWM, PDR, POR, PVD, PWM, Temp Sensor, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "37",
+      "ValueText": "37"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "261548",
+      "ValueText": "64KB (64K x 8)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "142947",
+      "ValueText": "20K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "168980",
+      "ValueText": "2V ~ 3.6V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "305817",
+      "ValueText": "A/D 10x12b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "359690",
+      "ValueText": "Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "225912",
+      "ValueText": "48-LQFP (7x7)"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "225910",
+      "ValueText": "48-LQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 57040,
      "Name": "STM32F103"
     },
-    "ManufacturerLeadWeeks": "40",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "40"
    }
   ],
   "ProductsCount": 2,
   "ExactMatches": [
    {
+    "Description": {
+     "ProductDescription": "IC MCU 32BIT 64KB FLASH 48LQFP",
+     "DetailedDescription": "ARM® Cortex®-M3 STM32F1 Microcontroller IC 32-Bit 72MHz 64KB (64K x 8) FLASH"
+    },
     "Manufacturer": {
      "Id": 497,
      "Name": "STMicroelectronics"
     },
     "ManufacturerProductNumber": "STM32F103C8T6",
-    "UnitPrice": 8.24,
     "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
+    "DatasheetUrl": "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "497-6063-ND",
@@ -284,17 +567,149 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750491",
+      "ValueText": "Not Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "314890",
+      "ValueText": "ARM® Cortex®-M3"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "188239",
+      "ValueText": "32-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "275575",
+      "ValueText": "72MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "800915",
+      "ValueText": "CANbus, I2C, IrDA, LINbus, SPI, UART/USART, USB"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "339865",
+      "ValueText": "DMA, Motor Control PWM, PDR, POR, PVD, PWM, Temp Sensor, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "37",
+      "ValueText": "37"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "261548",
+      "ValueText": "64KB (64K x 8)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "142947",
+      "ValueText": "20K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "168980",
+      "ValueText": "2V ~ 3.6V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "305817",
+      "ValueText": "A/D 10x12b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "359690",
+      "ValueText": "Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "225910",
+      "ValueText": "48-LQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 57040,
      "Name": "STM32F103"
     },
-    "ManufacturerLeadWeeks": "40",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "40"
    }
   ],
   "SearchLocaleUsed": {
@@ -306,13 +721,17 @@
  "digikey:STM32G030F6P6": {
   "Products": [
    {
+    "Description": {
+     "ProductDescription": "IC MCU 32BIT 32KB FLASH 20TSSOP",
+     "DetailedDescription": "ARM® Cortex®-M0+ STM32G0 Microcontroller IC 32-Bit 64MHz 32KB (32K x 8) FLASH 20-TSSOP"
+    },
     "Manufacturer": {
      "Id": 497,
      "Name": "STMicroelectronics"
     },
     "ManufacturerProductNumber": "STM32G030F6P6",
-    "UnitPrice": 2.18,
     "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
+    "DatasheetUrl": "https://www.st.com/resource/en/datasheet/stm32g030c6.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "497-STM32G030F6P6-ND",
@@ -364,26 +783,169 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750491",
+      "ValueText": "Not Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "314885",
+      "ValueText": "ARM® Cortex®-M0+"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "188239",
+      "ValueText": "32-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "261673",
+      "ValueText": "64MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "801297",
+      "ValueText": "I2C, IrDA, LINbus, SPI, SmartCard, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "801561",
+      "ValueText": "DMA, I2S, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "17",
+      "ValueText": "17"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188406",
+      "ValueText": "32KB (32K x 8)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "294222",
+      "ValueText": "8K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "168980",
+      "ValueText": "2V ~ 3.6V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "305923",
+      "ValueText": "A/D 13x12b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "345714",
+      "ValueText": "External, Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "143756",
+      "ValueText": "20-TSSOP"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "143757",
+      "ValueText": "20-TSSOP (0.173\", 4.40mm Width)"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 647509,
      "Name": "STM32G030"
     },
-    "ManufacturerLeadWeeks": "52",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "52"
    },
    {
+    "Description": {
+     "ProductDescription": "PROGRAMMABLE POWER SUPPLY MODULE",
+     "DetailedDescription": "AD8418, B0505S-1WR3, CA-IS3020S, STM32G030F6P6 Power Supply Power Management M5Stack Platform Evaluation Expansion Board"
+    },
     "Manufacturer": {
      "Id": 2221,
      "Name": "M5Stack Technology Co., Ltd."
     },
     "ManufacturerProductNumber": "M137",
-    "UnitPrice": 24.5,
     "ProductUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/M137/22571404",
+    "DatasheetUrl": "",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "2221-M137-ND",
@@ -415,23 +977,75 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 1742,
+      "ParameterText": "Platform",
+      "ParameterType": "String",
+      "ValueId": "425045",
+      "ValueText": "M5Stack"
+     },
+     {
+      "ParameterId": 183,
+      "ParameterText": "Type",
+      "ParameterType": "String",
+      "ValueId": "389240",
+      "ValueText": "Power Management"
+     },
+     {
+      "ParameterId": 110,
+      "ParameterText": "Function",
+      "ParameterType": "String",
+      "ValueId": "389402",
+      "ValueText": "Power Supply"
+     },
+     {
+      "ParameterId": 984,
+      "ParameterText": "Utilized IC / Part",
+      "ParameterType": "String",
+      "ValueId": "817167",
+      "ValueText": "AD8418, B0505S-1WR3, CA-IS3020S, STM32G030F6P6"
+     },
+     {
+      "ParameterId": 224,
+      "ParameterText": "Contents",
+      "ParameterType": "String",
+      "ValueId": "321631",
+      "ValueText": "Board(s)"
+     }
+    ],
     "BaseProductNumber": {},
-    "ManufacturerLeadWeeks": "9",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 33,
+     "Name": "Development Boards, Kits, Programmers",
+     "ChildCategories": [
+      {
+       "CategoryId": 2041,
+       "Name": "Evaluation Boards",
+       "ChildCategories": [
+        {
+         "CategoryId": 797,
+         "Name": "Expansion Boards, Daughter Cards",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "9"
    },
    {
+    "Description": {
+     "ProductDescription": "4-Relays 4- HV Inputs Stackable",
+     "DetailedDescription": "STM32G030F6P6 Relays, Opto-Isolated Inputs, RS485 Interface Raspberry Pi Platform Evaluation Expansion Board"
+    },
     "Manufacturer": {
      "Id": 5141,
      "Name": "SEQUENT MICROSYSTEMS"
     },
     "ManufacturerProductNumber": "SM-I-010",
-    "UnitPrice": 80,
     "ProductUrl": "https://www.digikey.com/en/products/detail/sequent-microsystems/SM-I-010/20483402",
+    "DatasheetUrl": "https://cdn.shopify.com/s/files/1/0534/4392/0067/files/4-RELAYS-4-INPUTS-UsersGuideV4.pdf?v=1670379600",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "5145-SM-I-010-ND",
@@ -465,23 +1079,75 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": true,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 1742,
+      "ParameterText": "Platform",
+      "ParameterType": "String",
+      "ValueId": "392493",
+      "ValueText": "Raspberry Pi"
+     },
+     {
+      "ParameterId": 183,
+      "ParameterText": "Type",
+      "ParameterType": "String",
+      "ValueId": "359346",
+      "ValueText": "Interface"
+     },
+     {
+      "ParameterId": 110,
+      "ParameterText": "Function",
+      "ParameterType": "String",
+      "ValueId": "831838",
+      "ValueText": "Relays, Opto-Isolated Inputs, RS485"
+     },
+     {
+      "ParameterId": 984,
+      "ParameterText": "Utilized IC / Part",
+      "ParameterType": "String",
+      "ValueId": "831812",
+      "ValueText": "STM32G030F6P6"
+     },
+     {
+      "ParameterId": 224,
+      "ParameterText": "Contents",
+      "ParameterType": "String",
+      "ValueId": "831841",
+      "ValueText": "Board(s), Connector(s), Hardware"
+     }
+    ],
     "BaseProductNumber": {},
-    "ManufacturerLeadWeeks": "0",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 33,
+     "Name": "Development Boards, Kits, Programmers",
+     "ChildCategories": [
+      {
+       "CategoryId": 2041,
+       "Name": "Evaluation Boards",
+       "ChildCategories": [
+        {
+         "CategoryId": 797,
+         "Name": "Expansion Boards, Daughter Cards",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "0"
    },
    {
+    "Description": {
+     "ProductDescription": "3-Relays 40A/250V HAT",
+     "DetailedDescription": "STM32G030F6P6 Electromechanical, RS485 Relay Raspberry Pi Platform Evaluation Expansion Board"
+    },
     "Manufacturer": {
      "Id": 5141,
      "Name": "SEQUENT MICROSYSTEMS"
     },
     "ManufacturerProductNumber": "SM-I-005",
-    "UnitPrice": 94,
     "ProductUrl": "https://www.digikey.com/en/products/detail/sequent-microsystems/SM-I-005/20483405",
+    "DatasheetUrl": "https://github.com/SequentMicrosystems/3relind-rpi/wiki/Three-40A-240V-Relays-RS485-Daisy-chainable-HAT-for-Raspberry-Pi",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "5145-SM-I-005-ND",
@@ -520,23 +1186,75 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": true,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 1742,
+      "ParameterText": "Platform",
+      "ParameterType": "String",
+      "ValueId": "392493",
+      "ValueText": "Raspberry Pi"
+     },
+     {
+      "ParameterId": 183,
+      "ParameterText": "Type",
+      "ParameterType": "String",
+      "ValueId": "395622",
+      "ValueText": "Relay"
+     },
+     {
+      "ParameterId": 110,
+      "ParameterText": "Function",
+      "ParameterType": "String",
+      "ValueId": "761096",
+      "ValueText": "Electromechanical, RS485"
+     },
+     {
+      "ParameterId": 984,
+      "ParameterText": "Utilized IC / Part",
+      "ParameterType": "String",
+      "ValueId": "831812",
+      "ValueText": "STM32G030F6P6"
+     },
+     {
+      "ParameterId": 224,
+      "ParameterText": "Contents",
+      "ParameterType": "String",
+      "ValueId": "831841",
+      "ValueText": "Board(s), Connector(s), Hardware"
+     }
+    ],
     "BaseProductNumber": {},
-    "ManufacturerLeadWeeks": "0",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 33,
+     "Name": "Development Boards, Kits, Programmers",
+     "ChildCategories": [
+      {
+       "CategoryId": 2041,
+       "Name": "Evaluation Boards",
+       "ChildCategories": [
+        {
+         "CategoryId": 797,
+         "Name": "Expansion Boards, Daughter Cards",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "0"
    },
    {
+    "Description": {
+     "ProductDescription": "IC MCU 32BIT 32KB FLASH 20TSSOP",
+     "DetailedDescription": "ARM® Cortex®-M0+ STM32G0 Microcontroller IC 32-Bit 64MHz 32KB (32K x 8) FLASH 20-TSSOP"
+    },
     "Manufacturer": {
      "Id": 497,
      "Name": "STMicroelectronics"
     },
     "ManufacturerProductNumber": "STM32G030F6P6TR",
-    "UnitPrice": 1.48,
     "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6TR/11591080",
+    "DatasheetUrl": "https://www.st.com/resource/en/datasheet/stm32g030f6.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "497-STM32G030F6P6TR-ND",
@@ -658,26 +1376,169 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750491",
+      "ValueText": "Not Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "314885",
+      "ValueText": "ARM® Cortex®-M0+"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "188239",
+      "ValueText": "32-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "261673",
+      "ValueText": "64MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "801297",
+      "ValueText": "I2C, IrDA, LINbus, SPI, SmartCard, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "801561",
+      "ValueText": "DMA, I2S, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "17",
+      "ValueText": "17"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188406",
+      "ValueText": "32KB (32K x 8)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "294222",
+      "ValueText": "8K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "168980",
+      "ValueText": "2V ~ 3.6V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "306002",
+      "ValueText": "A/D 16x12b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "345714",
+      "ValueText": "External, Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "143756",
+      "ValueText": "20-TSSOP"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "143757",
+      "ValueText": "20-TSSOP (0.173\", 4.40mm Width)"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 647509,
      "Name": "STM32G030"
     },
-    "ManufacturerLeadWeeks": "52",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "52"
    },
    {
+    "Description": {
+     "ProductDescription": "I2C JOYSTICK 2 UNIT (STM32G030)",
+     "DetailedDescription": "STM32G030F6P6 Joystick Human Interface Platform Evaluation Expansion Board"
+    },
     "Manufacturer": {
      "Id": 2221,
      "Name": "M5Stack Technology Co., Ltd."
     },
     "ManufacturerProductNumber": "U024-V2",
-    "UnitPrice": 4.95,
     "ProductUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/U024-V2/25600002",
+    "DatasheetUrl": "https://m5stack.oss-cn-shenzhen.aliyuncs.com/resource/docs/products/unit/Unit-DMX/CA-IS3092W.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "2221-U024-V2-ND",
@@ -711,23 +1572,75 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 1742,
+      "ParameterText": "Platform",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 183,
+      "ParameterText": "Type",
+      "ParameterType": "String",
+      "ValueId": "356652",
+      "ValueText": "Human Interface"
+     },
+     {
+      "ParameterId": 110,
+      "ParameterText": "Function",
+      "ParameterType": "String",
+      "ValueId": "362078",
+      "ValueText": "Joystick"
+     },
+     {
+      "ParameterId": 984,
+      "ParameterText": "Utilized IC / Part",
+      "ParameterType": "String",
+      "ValueId": "831812",
+      "ValueText": "STM32G030F6P6"
+     },
+     {
+      "ParameterId": 224,
+      "ParameterText": "Contents",
+      "ParameterType": "String",
+      "ValueId": "321636",
+      "ValueText": "Board(s), Cable(s)"
+     }
+    ],
     "BaseProductNumber": {},
-    "ManufacturerLeadWeeks": "9",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 33,
+     "Name": "Development Boards, Kits, Programmers",
+     "ChildCategories": [
+      {
+       "CategoryId": 2041,
+       "Name": "Evaluation Boards",
+       "ChildCategories": [
+        {
+         "CategoryId": 797,
+         "Name": "Expansion Boards, Daughter Cards",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "9"
    },
    {
+    "Description": {
+     "ProductDescription": "IO MODULE FOR STAMPLC (NA226AIDG",
+     "DetailedDescription": "STM32G030F6P6 MCU Embedded Platform Evaluation Expansion Board"
+    },
     "Manufacturer": {
      "Id": 2221,
      "Name": "M5Stack Technology Co., Ltd."
     },
     "ManufacturerProductNumber": "A176",
-    "UnitPrice": 24.94,
     "ProductUrl": "https://www.digikey.com/en/products/detail/m5stack-technology-co-ltd/A176/29822155",
+    "DatasheetUrl": "https://docs.m5stack.com/en/stamplc/StamPLC_IO",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "2221-A176-ND",
@@ -759,26 +1672,78 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 1742,
+      "ParameterText": "Platform",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 183,
+      "ParameterText": "Type",
+      "ParameterType": "String",
+      "ValueId": "343797",
+      "ValueText": "Embedded"
+     },
+     {
+      "ParameterId": 110,
+      "ParameterText": "Function",
+      "ParameterType": "String",
+      "ValueId": "374358",
+      "ValueText": "MCU"
+     },
+     {
+      "ParameterId": 984,
+      "ParameterText": "Utilized IC / Part",
+      "ParameterType": "String",
+      "ValueId": "831812",
+      "ValueText": "STM32G030F6P6"
+     },
+     {
+      "ParameterId": 224,
+      "ParameterText": "Contents",
+      "ParameterType": "String",
+      "ValueId": "321631",
+      "ValueText": "Board(s)"
+     }
+    ],
     "BaseProductNumber": {},
-    "ManufacturerLeadWeeks": "9",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 33,
+     "Name": "Development Boards, Kits, Programmers",
+     "ChildCategories": [
+      {
+       "CategoryId": 2041,
+       "Name": "Evaluation Boards",
+       "ChildCategories": [
+        {
+         "CategoryId": 797,
+         "Name": "Expansion Boards, Daughter Cards",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "9"
    }
   ],
   "ProductsCount": 7,
   "ExactMatches": [
    {
+    "Description": {
+     "ProductDescription": "IC MCU 32BIT 32KB FLASH 20TSSOP",
+     "DetailedDescription": "ARM® Cortex®-M0+ STM32G0 Microcontroller IC 32-Bit 64MHz 32KB (32K x 8) FLASH 20-TSSOP"
+    },
     "Manufacturer": {
      "Id": 497,
      "Name": "STMicroelectronics"
     },
     "ManufacturerProductNumber": "STM32G030F6P6",
-    "UnitPrice": 2.18,
     "ProductUrl": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
+    "DatasheetUrl": "https://www.st.com/resource/en/datasheet/stm32g030c6.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "497-STM32G030F6P6-ND",
@@ -830,17 +1795,156 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750491",
+      "ValueText": "Not Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "314885",
+      "ValueText": "ARM® Cortex®-M0+"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "188239",
+      "ValueText": "32-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "261673",
+      "ValueText": "64MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "801297",
+      "ValueText": "I2C, IrDA, LINbus, SPI, SmartCard, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "801561",
+      "ValueText": "DMA, I2S, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "17",
+      "ValueText": "17"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188406",
+      "ValueText": "32KB (32K x 8)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "1",
+      "ValueText": "-"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "294222",
+      "ValueText": "8K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "168980",
+      "ValueText": "2V ~ 3.6V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "305923",
+      "ValueText": "A/D 13x12b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "345714",
+      "ValueText": "External, Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "143756",
+      "ValueText": "20-TSSOP"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "143757",
+      "ValueText": "20-TSSOP (0.173\", 4.40mm Width)"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 647509,
      "Name": "STM32G030"
     },
-    "ManufacturerLeadWeeks": "52",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "52"
    }
   ],
   "SearchLocaleUsed": {
@@ -852,13 +1956,17 @@
  "digikey:ATMEGA328P-AU": {
   "Products": [
    {
+    "Description": {
+     "ProductDescription": "IC MCU 8BIT 32KB FLASH 32TQFP",
+     "DetailedDescription": "AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB (16K x 16) FLASH 32-TQFP (7x7)"
+    },
     "Manufacturer": {
      "Id": 150,
      "Name": "Microchip Technology"
     },
     "ManufacturerProductNumber": "ATMEGA328P-AU",
-    "UnitPrice": 2.66,
     "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
+    "DatasheetUrl": "https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "ATMEGA328P-AU-ND",
@@ -900,26 +2008,169 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750490",
+      "ValueText": "Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "317125",
+      "ValueText": "AVR"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "293889",
+      "ValueText": "8-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "143250",
+      "ValueText": "20MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "799927",
+      "ValueText": "I2C, SPI, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "323363",
+      "ValueText": "Brown-out Detect/Reset, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "23",
+      "ValueText": "23"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188402",
+      "ValueText": "32KB (16K x 16)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "120264",
+      "ValueText": "1K x 8"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "168098",
+      "ValueText": "2K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "61334",
+      "ValueText": "1.8V ~ 5.5V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "306519",
+      "ValueText": "A/D 8x10b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "359690",
+      "ValueText": "Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "188793",
+      "ValueText": "32-TQFP (7x7)"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "188791",
+      "ValueText": "32-TQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 62003,
      "Name": "ATMEGA328"
     },
-    "ManufacturerLeadWeeks": "27",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "27"
    },
    {
+    "Description": {
+     "ProductDescription": "IC MCU 8BIT 32KB FLASH 32TQFP",
+     "DetailedDescription": "AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB (16K x 16) FLASH 32-TQFP (7x7)"
+    },
     "Manufacturer": {
      "Id": 150,
      "Name": "Microchip Technology"
     },
     "ManufacturerProductNumber": "ATMEGA328P-AUR",
-    "UnitPrice": 2.74,
     "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AUR/2357086",
+    "DatasheetUrl": "https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "ATMEGA328P-AURTR-ND",
@@ -1011,26 +2262,169 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750490",
+      "ValueText": "Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "317125",
+      "ValueText": "AVR"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "293889",
+      "ValueText": "8-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "143250",
+      "ValueText": "20MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "799927",
+      "ValueText": "I2C, SPI, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "323363",
+      "ValueText": "Brown-out Detect/Reset, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "23",
+      "ValueText": "23"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188402",
+      "ValueText": "32KB (16K x 16)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "120264",
+      "ValueText": "1K x 8"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "168098",
+      "ValueText": "2K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "61334",
+      "ValueText": "1.8V ~ 5.5V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "306519",
+      "ValueText": "A/D 8x10b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "359690",
+      "ValueText": "Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "188793",
+      "ValueText": "32-TQFP (7x7)"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "188791",
+      "ValueText": "32-TQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 62003,
      "Name": "ATMEGA328"
     },
-    "ManufacturerLeadWeeks": "4",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "4"
    },
    {
+    "Description": {
+     "ProductDescription": "IC MCU 8BIT 32KB FLASH 32TQFP",
+     "DetailedDescription": "AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB (16K x 16) FLASH 32-TQFP (7x7)"
+    },
     "Manufacturer": {
      "Id": 150,
      "Name": "Microchip Technology"
     },
     "ManufacturerProductNumber": "ATMEGA328P-AURA0",
-    "UnitPrice": 0,
     "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AURA0/20506609",
+    "DatasheetUrl": "",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "150-ATMEGA328P-AURA0-ND",
@@ -1056,30 +2450,165 @@
      "Id": 1,
      "Status": "Obsolete"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": false,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "317125",
+      "ValueText": "AVR"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "293889",
+      "ValueText": "8-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "143250",
+      "ValueText": "20MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "799927",
+      "ValueText": "I2C, SPI, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "323363",
+      "ValueText": "Brown-out Detect/Reset, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "23",
+      "ValueText": "23"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188402",
+      "ValueText": "32KB (16K x 16)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "120264",
+      "ValueText": "1K x 8"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "168098",
+      "ValueText": "2K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "61334",
+      "ValueText": "1.8V ~ 5.5V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "306519",
+      "ValueText": "A/D 8x10b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "345714",
+      "ValueText": "External, Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "188793",
+      "ValueText": "32-TQFP (7x7)"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "188791",
+      "ValueText": "32-TQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 62003,
      "Name": "ATMEGA328"
     },
-    "DateLastBuyChance": "2023-07-05T05:00:00+00:00",
-    "ManufacturerLeadWeeks": "52",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "52"
    }
   ],
   "ProductsCount": 3,
   "ExactMatches": [
    {
+    "Description": {
+     "ProductDescription": "IC MCU 8BIT 32KB FLASH 32TQFP",
+     "DetailedDescription": "AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB (16K x 16) FLASH 32-TQFP (7x7)"
+    },
     "Manufacturer": {
      "Id": 150,
      "Name": "Microchip Technology"
     },
     "ManufacturerProductNumber": "ATMEGA328P-AU",
-    "UnitPrice": 2.66,
     "ProductUrl": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
+    "DatasheetUrl": "https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf",
     "ProductVariations": [
      {
       "DigiKeyProductNumber": "ATMEGA328P-AU-ND",
@@ -1121,17 +2650,156 @@
      "Id": 0,
      "Status": "Active"
     },
-    "BackOrderNotAllowed": false,
-    "NormallyStocking": true,
-    "Discontinued": false,
-    "EndOfLife": false,
-    "Ncnr": false,
+    "Parameters": [
+     {
+      "ParameterId": 2697,
+      "ParameterText": "DigiKey Programmable",
+      "ParameterType": "String",
+      "ValueId": "750490",
+      "ValueText": "Verified"
+     },
+     {
+      "ParameterId": 506,
+      "ParameterText": "Core Processor",
+      "ParameterType": "String",
+      "ValueId": "317125",
+      "ValueText": "AVR"
+     },
+     {
+      "ParameterId": 689,
+      "ParameterText": "Core Size",
+      "ParameterType": "String",
+      "ValueId": "293889",
+      "ValueText": "8-Bit"
+     },
+     {
+      "ParameterId": 143,
+      "ParameterText": "Speed",
+      "ParameterType": "String",
+      "ValueId": "143250",
+      "ValueText": "20MHz"
+     },
+     {
+      "ParameterId": 1113,
+      "ParameterText": "Connectivity",
+      "ParameterType": "String",
+      "ValueId": "799927",
+      "ValueText": "I2C, SPI, UART/USART"
+     },
+     {
+      "ParameterId": 1114,
+      "ParameterText": "Peripherals",
+      "ParameterType": "String",
+      "ValueId": "323363",
+      "ValueText": "Brown-out Detect/Reset, POR, PWM, WDT"
+     },
+     {
+      "ParameterId": 2208,
+      "ParameterText": "Number of I/O",
+      "ParameterType": "Double",
+      "ValueId": "23",
+      "ValueText": "23"
+     },
+     {
+      "ParameterId": 155,
+      "ParameterText": "Program Memory Size",
+      "ParameterType": "String",
+      "ValueId": "188402",
+      "ValueText": "32KB (16K x 16)"
+     },
+     {
+      "ParameterId": 290,
+      "ParameterText": "Program Memory Type",
+      "ParameterType": "String",
+      "ValueId": "347758",
+      "ValueText": "FLASH"
+     },
+     {
+      "ParameterId": 291,
+      "ParameterText": "EEPROM Size",
+      "ParameterType": "String",
+      "ValueId": "120264",
+      "ValueText": "1K x 8"
+     },
+     {
+      "ParameterId": 156,
+      "ParameterText": "RAM Size",
+      "ParameterType": "String",
+      "ValueId": "168098",
+      "ValueText": "2K x 8"
+     },
+     {
+      "ParameterId": 1112,
+      "ParameterText": "Voltage - Supply (Vcc/Vdd)",
+      "ParameterType": "String",
+      "ValueId": "61334",
+      "ValueText": "1.8V ~ 5.5V"
+     },
+     {
+      "ParameterId": 519,
+      "ParameterText": "Data Converters",
+      "ParameterType": "String",
+      "ValueId": "306519",
+      "ValueText": "A/D 8x10b"
+     },
+     {
+      "ParameterId": 283,
+      "ParameterText": "Oscillator Type",
+      "ParameterType": "String",
+      "ValueId": "359690",
+      "ValueText": "Internal"
+     },
+     {
+      "ParameterId": 252,
+      "ParameterText": "Operating Temperature",
+      "ParameterType": "String",
+      "ValueId": "212621",
+      "ValueText": "-40°C ~ 85°C (TA)"
+     },
+     {
+      "ParameterId": 69,
+      "ParameterText": "Mounting Type",
+      "ParameterType": "String",
+      "ValueId": "409393",
+      "ValueText": "Surface Mount"
+     },
+     {
+      "ParameterId": 1291,
+      "ParameterText": "Supplier Device Package",
+      "ParameterType": "String",
+      "ValueId": "188793",
+      "ValueText": "32-TQFP (7x7)"
+     },
+     {
+      "ParameterId": 16,
+      "ParameterText": "Package / Case",
+      "ParameterType": "String",
+      "ValueId": "188791",
+      "ValueText": "32-TQFP"
+     }
+    ],
     "BaseProductNumber": {
      "Id": 62003,
      "Name": "ATMEGA328"
     },
-    "ManufacturerLeadWeeks": "27",
-    "ManufacturerPublicQuantity": 0
+    "Category": {
+     "CategoryId": 32,
+     "Name": "Integrated Circuits (ICs)",
+     "ChildCategories": [
+      {
+       "CategoryId": 2012,
+       "Name": "Embedded",
+       "ChildCategories": [
+        {
+         "CategoryId": 685,
+         "Name": "Microcontrollers",
+         "ChildCategories": []
+        }
+       ]
+      }
+     ]
+    },
+    "ManufacturerLeadWeeks": "27"
    }
   ],
   "SearchLocaleUsed": {

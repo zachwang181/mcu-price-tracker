@@ -17,12 +17,14 @@ const { buildParts } = require("./lib/build");
 const { todayTW } = require("./lib/util");
 const digikey = require("./lib/digikey");
 const mouser = require("./lib/mouser");
+const lcsc = require("./lib/lcsc");
 
 const ROOT = path.join(__dirname, "..");
 const DATA = path.join(ROOT, "data");
 const SOURCES = [
   { key: "digikey", mod: digikey, missing: "沒有設定 DIGIKEY_CLIENT_ID / DIGIKEY_CLIENT_SECRET" },
   { key: "mouser", mod: mouser, missing: "沒有設定 MOUSER_API_KEY" },
+  { key: "lcsc", mod: lcsc, missing: "沒有設定 LCSC_API_KEY / LCSC_API_SECRET" },
 ];
 
 function arg(name, dflt) {

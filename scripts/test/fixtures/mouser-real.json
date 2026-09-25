@@ -6,7 +6,10 @@
    "Parts": [
     {
      "Availability": "6344 庫存量",
+     "DataSheetUrl": "",
+     "Description": "ARM微控制器 - MCU 32BIT Cortex M3 64KB 20KB RAM 2X12 ADC",
      "FactoryStock": "0",
+     "Category": "ARM微控制器 - MCU",
      "LeadTime": "280 日數",
      "LifecycleStatus": null,
      "Manufacturer": "STMicroelectronics",
@@ -14,6 +17,16 @@
      "Min": "1",
      "Mult": "1",
      "MouserPartNumber": "511-STM32F103C8T6",
+     "ProductAttributes": [
+      {
+       "AttributeName": "封裝",
+       "AttributeValue": "Tray"
+      },
+      {
+       "AttributeName": "標準包裝數量",
+       "AttributeValue": "1500"
+      }
+     ],
      "PriceBreaks": [
       {
        "Quantity": 1,
@@ -56,19 +69,7 @@
        "Currency": "USD"
       }
      ],
-     "AlternatePackagings": [
-      {
-       "APMfrPN": "STM32F103C8T6TR"
-      }
-     ],
-     "ProductDetailUrl": "https://www.mouser.tw/zh/ProductDetail/STMicroelectronics/STM32F103C8T6?qs=bhCVus9SdFtq6kqxsU5%2FDA%3D%3D",
-     "AvailabilityInStock": "6344",
-     "AvailabilityOnOrder": [
-      {
-       "Quantity": 7490,
-       "Date": "2026-10-05T00:00:00"
-      }
-     ]
+     "ProductDetailUrl": "https://www.mouser.tw/zh/ProductDetail/STMicroelectronics/STM32F103C8T6?qs=bhCVus9SdFtq6kqxsU5%2FDA%3D%3D"
     }
    ]
   }
@@ -80,7 +81,10 @@
    "Parts": [
     {
      "Availability": "8167 庫存量",
+     "DataSheetUrl": "",
+     "Description": "8-位微控制器 - MCU 32KB In-system Flash 20MHz 1.8V-5.5V",
      "FactoryStock": "0",
+     "Category": "8-位微控制器 - MCU",
      "LeadTime": "63 日數",
      "LifecycleStatus": "Not Recommended for New Designs",
      "Manufacturer": "Microchip Technology",
@@ -88,6 +92,16 @@
      "Min": "1",
      "Mult": "1",
      "MouserPartNumber": "556-ATMEGA328P-AU",
+     "ProductAttributes": [
+      {
+       "AttributeName": "封裝",
+       "AttributeValue": "Tray"
+      },
+      {
+       "AttributeName": "標準包裝數量",
+       "AttributeValue": "250"
+      }
+     ],
      "PriceBreaks": [
       {
        "Quantity": 1,
@@ -105,14 +119,7 @@
        "Currency": "USD"
       }
      ],
-     "AlternatePackagings": [
-      {
-       "APMfrPN": "ATMEGA328P-AUR"
-      }
-     ],
-     "ProductDetailUrl": "https://www.mouser.tw/zh/ProductDetail/Microchip-Technology/ATMEGA328P-AU?qs=K8BHR703ZXiCmmgp6%2FGNmQ%3D%3D",
-     "AvailabilityInStock": "8167",
-     "AvailabilityOnOrder": []
+     "ProductDetailUrl": "https://www.mouser.tw/zh/ProductDetail/Microchip-Technology/ATMEGA328P-AU?qs=K8BHR703ZXiCmmgp6%2FGNmQ%3D%3D"
     }
    ]
   }
@@ -131,7 +138,10 @@
    "Parts": [
     {
      "Availability": "1227 庫存量",
+     "DataSheetUrl": "",
+     "Description": "8-位微控制器 - MCU Low Pin Count 8051 Series; 2.4V to 5.5V; -40 to 85",
      "FactoryStock": "0",
+     "Category": "8-位微控制器 - MCU",
      "LeadTime": "280 日數",
      "LifecycleStatus": null,
      "Manufacturer": "Nuvoton",
@@ -139,6 +149,16 @@
      "Min": "1",
      "Mult": "1",
      "MouserPartNumber": "503-N76E003AT20",
+     "ProductAttributes": [
+      {
+       "AttributeName": "封裝",
+       "AttributeValue": "Tube"
+      },
+      {
+       "AttributeName": "標準包裝數量",
+       "AttributeValue": "74"
+      }
+     ],
      "PriceBreaks": [
       {
        "Quantity": 1,
@@ -181,10 +201,7 @@
        "Currency": "USD"
       }
      ],
-     "AlternatePackagings": null,
-     "ProductDetailUrl": "https://www.mouser.tw/zh/ProductDetail/Nuvoton/N76E003AT20?qs=A6eO%252BMLsxmTw2Fm3XoUzRQ%3D%3D",
-     "AvailabilityInStock": "1227",
-     "AvailabilityOnOrder": []
+     "ProductDetailUrl": "https://www.mouser.tw/zh/ProductDetail/Nuvoton/N76E003AT20?qs=A6eO%252BMLsxmTw2Fm3XoUzRQ%3D%3D"
     }
    ]
   }

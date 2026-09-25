@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
     inputs:
       source:
-        description: "要抓哪一家：digikey 或 mouser，留空就兩家都抓"
+        description: "要抓哪一家：digikey / mouser / lcsc，留空就全部抓"
         required: false
         default: ""
       limit:
@@ -35,6 +35,10 @@ jobs:
           DIGIKEY_CLIENT_ID: ${{ secrets.DIGIKEY_CLIENT_ID }}
           DIGIKEY_CLIENT_SECRET: ${{ secrets.DIGIKEY_CLIENT_SECRET }}
           MOUSER_API_KEY: ${{ secrets.MOUSER_API_KEY }}
+          LCSC_API_KEY: ${{ secrets.LCSC_API_KEY }}
+          LCSC_API_SECRET: ${{ secrets.LCSC_API_SECRET }}
+          LCSC_BASE_URL: ${{ vars.LCSC_BASE_URL }}
+          LCSC_SIGN_ALGO: ${{ vars.LCSC_SIGN_ALGO }}
         run: |
           node scripts/fetch.js --dry \
             --limit=${{ inputs.limit }} \

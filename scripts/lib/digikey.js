@@ -1,5 +1,6 @@
 "use strict";
 const { normMpn, leadToWeeks, parseCount, sleep, env } = require("./util");
+const { toSpec } = require("./spec");
 
 const SOURCE = "Digi-Key";
 const TOKEN_URL = "https://api.digikey.com/v1/oauth2/token";
@@ -113,6 +114,7 @@ function parseResponse(json, mpn, currency = "USD") {
     stock: parseCount(product.QuantityAvailable),
     url: product.ProductUrl || "",
     packagings: toPackagings(product),
+    spec: toSpec.fromDigikey(product),
     rawResponse: json,
   };
 }

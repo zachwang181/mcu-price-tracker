@@ -5,6 +5,7 @@
     "manufacturer": "STMicroelectronics",
     "group": "intl",
     "note": "經典 Cortex-M3，替代料多，適合當基準",
+    "use": "泛用工業控制板、3D 列印主板、Blue Pill 開發板。替代料最多，適合當整體行情的基準",
     "obs": [
       {
         "id": "seed0618",
@@ -183,6 +184,7 @@
     "manufacturer": "STMicroelectronics",
     "group": "intl",
     "note": "低價 Cortex-M0+",
+    "use": "取代 8-bit 的小腳位低價控制：家電、電源管理、小型感測節點",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -309,6 +311,7 @@
     "manufacturer": "Microchip",
     "group": "intl",
     "note": "8-bit AVR",
+    "use": "Arduino Uno / Nano 的核心。教學、快速原型、簡單開關與感測控制",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -435,6 +438,7 @@
     "manufacturer": "Microchip",
     "group": "intl",
     "note": "Cortex-M0+",
+    "use": "Arduino Zero、Adafruit Feather 系列。需要原生 USB 的消費性裝置",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -600,6 +604,7 @@
     "manufacturer": "NXP",
     "group": "intl",
     "note": "Kinetis Cortex-M0+",
+    "use": "FRDM-KL25Z 開發板、馬達控制、電容觸控介面",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -726,6 +731,7 @@
     "manufacturer": "NXP",
     "group": "intl",
     "note": "Cortex-M3",
+    "use": "mbed LPC1768 開發板。需要乙太網或 USB Host 的工業通訊與機器人控制",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -852,6 +858,7 @@
     "manufacturer": "Texas Instruments",
     "group": "intl",
     "note": "16-bit",
+    "use": "超低功耗電池供電感測器、LaunchPad 教學板。DIP 封裝好手焊",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -978,6 +985,7 @@
     "manufacturer": "Renesas",
     "group": "intl",
     "note": "RA4M1 Cortex-M4",
+    "use": "Arduino Uno R4 的主控。工業感測與人機介面",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",
@@ -1104,6 +1112,7 @@
     "manufacturer": "GigaDevice",
     "group": "cn",
     "note": "STM32F103 pin-to-pin 替代",
+    "use": "STM32F103 缺料或漲價時的第二來源，腳位相容可直接換",
     "obs": [
       {
         "id": "lcsc0925a",
@@ -1152,6 +1161,7 @@
     "manufacturer": "GigaDevice",
     "group": "cn",
     "note": "Cortex-M4",
+    "use": "中階工業控制、變頻器、數位電源",
     "obs": []
   },
   {
@@ -1160,6 +1170,7 @@
     "manufacturer": "WCH",
     "group": "cn",
     "note": "RISC-V 超低價",
+    "use": "目前最便宜的 32-bit MCU 之一。玩具、LED 燈控、小家電的成本底線",
     "obs": []
   },
   {
@@ -1168,6 +1179,7 @@
     "manufacturer": "WCH",
     "group": "cn",
     "note": "STM32F103 替代",
+    "use": "STM32F103 的低價替代，成本比 GD32 再低一階",
     "obs": []
   },
   {
@@ -1176,6 +1188,7 @@
     "manufacturer": "Nuvoton",
     "group": "tw",
     "note": "8051",
+    "use": "小家電、電源與馬達驅動的低成本 8-bit 控制",
     "obs": [
       {
         "id": "auto-digi-key-2026-09-25-1",

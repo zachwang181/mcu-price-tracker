@@ -16,7 +16,7 @@
 2. 在最後面加一列，用半形逗號隔開四個欄位：
 
    ```
-   STM32G431CBT6,STMicroelectronics,intl,Cortex-M4
+   STM32G431CBT6,STMicroelectronics,intl,Cortex-M4,馬達控制與數位電源
    ```
 
    | 欄位 | 填什麼 |
@@ -25,6 +25,7 @@
    | 製造商 | 要跟調價事件裡的原廠寫法一致，網頁才會把調價日畫在走勢圖上。 |
    | 分組 | `intl`＝國際大廠、`cn`＝中國品牌、`tw`＝台灣品牌。只能填這三個。 |
    | 備註 | 隨便寫，會顯示在料號卡片上。 |
+   | 用途 | 這顆料通常用在什麼產品上。通路 API 沒有這種資料，是人工寫的，看到不對就改。 |
 
 3. 不追蹤某顆料號，就把**那一整列刪掉**。
 4. 右上角綠色的 **Commit changes…** → 再按一次 **Commit changes**。
@@ -71,7 +72,9 @@
 
 ## 已知限制
 
-- **國產料抓不到。** GD32、WCH、國民技術這類料號 Digi-Key 和 Mouser 都沒賣，只能靠手動記在 `manual_quotes.csv`，或日後接上 LCSC 的報價（Nexar／Octopart API，或 LCSC 官方 API）。接的時候不需要改網頁，只要在 `scripts/lib/` 下多一個資料源檔案。
+- **國產料要靠 LCSC。** GD32、WCH 這類料號 Digi-Key 和 Mouser 都沒賣。LCSC 的資料源程式已經寫好（`scripts/lib/lcsc.js`，照官方 API 文件寫的），但還沒拿到 key，所以目前自動略過。拿到 key 貼進 Secrets 就會開始抓，不用改任何程式。
+- **LCSC 的簽章演算法還沒用真實 API 確認過。** 官方文件的說明頁寫 sha1、Python 範例用 sha256，而且文件自己給的示範雜湊值跟它自己給的輸入字串對不起來。程式預設走 sha256，拿到 key 第一次呼叫失敗的話，在 repo 的 Variables 新增 `LCSC_SIGN_ALGO=sha1` 就能切換，不用改程式。`LCSC_BASE_URL` 同理（文件範例是他們的測試站）。
+- **LCSC API 的申請門檻。** 官方說明要求提交公司網站、營業執照（或同等證明）、預估採購量與合作模式，是給企業夥伴用的；個人申請不一定過。另外文件裡有「IP 未列入白名單」的錯誤碼，如果 LCSC 強制 IP 白名單，GitHub Actions 的浮動 IP 會過不了 —— 這兩點要等申請結果才知道。
 - **料號後綴要完全相符。** 通路的料號常有後綴，例如 `LPC1768FBD100` 在 Digi-Key 上是 `LPC1768FBD100K`、`R7FA4M1AB3CFM` 是 `R7FA4M1AB3CFM#AA0`。後綴可能代表不同封裝或溫度等級、價格也不一樣，所以程式**不會自己替你挑**，只會在料號卡片上列出通路有哪些相近料號，由你決定要追哪一個。
 - **價格會公開。** 這個 repo 是 public，所以抓到的價格、你記的代理商報價、料號清單都看得到，Google 也可能收錄。Digi-Key 和 Mouser 的 API 條款對「重新散布價格資料」通常有限制；以這個規模、又標明出處，實務上幾乎不會有問題，但嚴格講是灰色地帶。真的在意的話，把 repo 轉成 private 即可（需要 GitHub Pro，約 US$4/月），網頁一樣能發布，程式完全不用改。
 - **排程會晚。** GitHub 的排程在尖峰時段常延遲十幾到幾十分鐘，09:00 只是大約。急著要就自己按一次 Run workflow。
@@ -105,6 +108,7 @@
 | --- | --- |
 | `DIGIKEY_CLIENT_ID` / `DIGIKEY_CLIENT_SECRET` | Digi-Key Product Information API v4 |
 | `MOUSER_API_KEY` | Mouser Search API |
+| `LCSC_API_KEY` / `LCSC_API_SECRET` | LCSC Product API（國產料用，需要向 LCSC 申請） |
 
 沒設定的資料源會自動略過，不會讓執行失敗。設了 key 卻全部失敗時，Actions 會顯示紅色叉叉，網頁上的「最近一次抓價」也會變紅並寫出原因。
 
