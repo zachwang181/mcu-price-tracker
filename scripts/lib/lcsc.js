@@ -1,4 +1,21 @@
 "use strict";
+/**
+ * ⚠️ 這個資料源目前「不使用」，而且不是因為還沒拿到 key。
+ *
+ * 2026-09-26 查過 LCSC 的 API 申請表，上面的 Notice 寫著：
+ *   "User Content: it is not allowed to disclose the interface information
+ *    and data information provided by LCSC electronics."
+ * 也就是明文禁止揭露透過 API 取得的資料。這個專案的網頁是公開的，
+ * 把 LCSC 的價格放上去就違反這一條。同一張表單還把「IP 白名單」列為必填，
+ * 而 GitHub Actions 的 IP 每次都不同，本來也填不出來。
+ *
+ * 備援的 Nexar（Octopart）同樣不行：條款禁止保留超過 24 小時的快取、
+ * 禁止用於通路之間的目錄價格比對、禁止在 Application 之外公開展示。
+ *
+ * 程式照官方文件寫好放著，是為了萬一日後拿到 LCSC 的書面同意、或是整個站
+ * 改成非公開時可以直接用。在那之前不要設 LCSC_API_KEY —— 沒設就會自動略過。
+ * 國產料（GD32、WCH）目前在網頁上維持「查無」，價格靠人工記進 manual_quotes.csv。
+ */
 const crypto = require("crypto");
 const { normMpn, parseCount, sleep, env } = require("./util");
 const { toSpec } = require("./spec");

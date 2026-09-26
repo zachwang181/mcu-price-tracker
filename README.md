@@ -4,7 +4,9 @@
 
 每天台灣時間早上 9 點，程式會自己去 Digi-Key 和 Mouser 抓一次這些料號的目錄價，存進這個 repo，網頁就會跟著更新。你不用開終端機，所有事情都在 GitHub 網頁上做。
 
-目前追蹤 13 顆料號，Digi-Key 和 Mouser 各抓得到其中 9 顆。抓不到的 4 顆（GD32F103C8T6、GD32F303RCT6、CH32V003F4P6、CH32F103C8T6）是國產料，這兩家通路本來就沒賣。
+目前追蹤 13 顆料號，Digi-Key 和 Mouser 各抓得到其中 9 顆。抓不到的 4 顆（GD32F103C8T6、GD32F303RCT6、CH32V003F4P6、CH32F103C8T6）是國產料，這兩家通路本來就沒賣；LCSC 那條路因為條款問題不能用（見「已知限制」），這幾顆的價格要人工記。
+
+每顆料號的卡片上也會顯示它**是什麼**：分類路徑、核心、時脈、Flash／RAM、I/O 數、封裝、工作電壓與溫度，這些由程式每天從通路的回應自動抓；另外有一欄**用途**（這顆料通常用在什麼產品上），通路 API 沒有這種資料，是人工寫在料號清單裡的。
 
 ---
 
@@ -72,9 +74,16 @@
 
 ## 已知限制
 
-- **國產料要靠 LCSC。** GD32、WCH 這類料號 Digi-Key 和 Mouser 都沒賣。LCSC 的資料源程式已經寫好（`scripts/lib/lcsc.js`，照官方 API 文件寫的），但還沒拿到 key，所以目前自動略過。拿到 key 貼進 Secrets 就會開始抓，不用改任何程式。
-- **LCSC 的簽章演算法還沒用真實 API 確認過。** 官方文件的說明頁寫 sha1、Python 範例用 sha256，而且文件自己給的示範雜湊值跟它自己給的輸入字串對不起來。程式預設走 sha256，拿到 key 第一次呼叫失敗的話，在 repo 的 Variables 新增 `LCSC_SIGN_ALGO=sha1` 就能切換，不用改程式。`LCSC_BASE_URL` 同理（文件範例是他們的測試站）。
-- **LCSC API 的申請門檻。** 官方說明要求提交公司網站、營業執照（或同等證明）、預估採購量與合作模式，是給企業夥伴用的；個人申請不一定過。另外文件裡有「IP 未列入白名單」的錯誤碼，如果 LCSC 強制 IP 白名單，GitHub Actions 的浮動 IP 會過不了 —— 這兩點要等申請結果才知道。
+- **國產料（GD32、WCH）沒有自動價格，網頁上維持「查無」。** Digi-Key 和 Mouser 都沒賣這些料號，而兩條正規的 LCSC 管道都不能用在這個站上：
+
+  | | 為什麼不行 |
+  | --- | --- |
+  | LCSC 官方 API | 申請表的 Notice 明文寫「不得揭露透過介面取得的資料」，而這個網站是公開的。表單還把 IP 白名單列為必填，GitHub Actions 沒有固定 IP。 |
+  | Nexar（Octopart） | 條款禁止保留超過 24 小時的快取（我們要累積歷史）、禁止通路之間的目錄價格比對（網頁上就是在做這件事）、禁止在 Application 之外公開展示。 |
+
+  LCSC 的程式仍留在 `scripts/lib/lcsc.js`（照官方文件寫的、有測試），沒設 key 就自動略過。**除非日後拿到 LCSC 的書面同意、或整個站改成非公開，否則不要啟用。**
+
+  要追國產料的價格，就自己去 LCSC 網站看，記進 `manual_quotes.csv` —— 網頁上那幾筆 LCSC 價格就是這樣來的。
 - **料號後綴要完全相符。** 通路的料號常有後綴，例如 `LPC1768FBD100` 在 Digi-Key 上是 `LPC1768FBD100K`、`R7FA4M1AB3CFM` 是 `R7FA4M1AB3CFM#AA0`。後綴可能代表不同封裝或溫度等級、價格也不一樣，所以程式**不會自己替你挑**，只會在料號卡片上列出通路有哪些相近料號，由你決定要追哪一個。
 - **價格會公開。** 這個 repo 是 public，所以抓到的價格、你記的代理商報價、料號清單都看得到，Google 也可能收錄。Digi-Key 和 Mouser 的 API 條款對「重新散布價格資料」通常有限制；以這個規模、又標明出處，實務上幾乎不會有問題，但嚴格講是灰色地帶。真的在意的話，把 repo 轉成 private 即可（需要 GitHub Pro，約 US$4/月），網頁一樣能發布，程式完全不用改。
 - **排程會晚。** GitHub 的排程在尖峰時段常延遲十幾到幾十分鐘，09:00 只是大約。急著要就自己按一次 Run workflow。
@@ -108,7 +117,7 @@
 | --- | --- |
 | `DIGIKEY_CLIENT_ID` / `DIGIKEY_CLIENT_SECRET` | Digi-Key Product Information API v4 |
 | `MOUSER_API_KEY` | Mouser Search API |
-| `LCSC_API_KEY` / `LCSC_API_SECRET` | LCSC Product API（國產料用，需要向 LCSC 申請） |
+| `LCSC_API_KEY` / `LCSC_API_SECRET` | LCSC Product API —— **目前刻意不設定**，原因見「已知限制」 |
 
 沒設定的資料源會自動略過，不會讓執行失敗。設了 key 卻全部失敗時，Actions 會顯示紅色叉叉，網頁上的「最近一次抓價」也會變紅並寫出原因。
 
