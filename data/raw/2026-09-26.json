@@ -5,14 +5,14 @@
     "manufacturer": "STMicroelectronics",
     "currency": "USD",
     "leadWeeks": 40,
-    "stock": 7656,
+    "stock": 7606,
     "url": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
     "packagings": [
       {
         "name": "Tray",
         "code": "497-6063-ND",
         "moq": 1,
-        "stock": 7656,
+        "stock": 7606,
         "breaks": [
           {
             "qty": 1,
