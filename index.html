@@ -248,6 +248,17 @@ mark { background: var(--mark); color: #15202b; border-radius: 2px; }
   .tl-row .del { grid-column: 2; grid-row: 2; text-align: right; }
   .tl-row .what, .tl-row .src { grid-column: 1 / 3; }
 }
+/* 漲跌箭頭 */
+.trend { display: inline-flex; align-items: baseline; gap: 4px; font-size: 13px; font-weight: 700; font-variant-numeric: tabular-nums; white-space: nowrap; padding: 1px 7px; border: 1.5px solid; border-radius: 3px; line-height: 1.5; }
+.trend i { font-style: normal; font-size: 12.5px; line-height: 1; }
+.trend.up { color: var(--up); border-color: var(--up); background: color-mix(in srgb, var(--up) 14%, transparent); }
+.trend.down { color: var(--down); border-color: var(--down); background: color-mix(in srgb, var(--down) 14%, transparent); }
+.trend.flat { color: var(--ink-2); border-color: var(--rule); }
+.trend.none { color: var(--ink-2); border-color: transparent; font-weight: 500; padding-left: 0; padding-right: 0; }
+.col li .row1 { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.col li .row1 .nm { min-width: 0; overflow-wrap: anywhere; }
+#pMeta .trend { margin-right: 8px; }
+
 /* 規格 */
 .kind { display: inline-block; font-size: 11px; font-weight: 500; padding: 0 6px; border-radius: 2px; background: var(--rule); color: var(--ink); vertical-align: 1px; line-height: 1.7; }
 .specbox { margin: 2px 0 14px; padding: 10px 14px; background: var(--bag); border: 1px solid var(--rule); border-radius: 4px; }
@@ -309,6 +320,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
 
   <section class="cat">
     <h2>料號 <span class="nums" id="catNums"></span></h2>
+    <p class="sub">每顆料號右邊的箭頭是最近一次報價跟 30 天前比的漲跌：<span class="trend up"><i>▲</i>漲</span>　<span class="trend down"><i>▼</i>跌</span>　<span class="trend flat"><i>—</i>持平</span>　<span class="trend none">—</span> 表示同一來源同一買量還沒有兩天以上的資料。把滑鼠移到箭頭上會顯示是拿哪兩筆在比。</p>
     <div class="ratio" id="catRatio"></div>
     <div class="cols" id="cols"></div>
     <details class="add">
@@ -523,6 +535,32 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     return best;
   }
 
+  // ---------- 漲跌 ----------
+  /**
+   * 挑一條有代表性的價格序列來算漲跌：點數最多的優先（歷史最長），
+   * 其次買量大的，再其次照來源名稱排，讓同一顆料號每次都挑到同一條。
+   * 這跟「近期異動」那一區不同 —— 那裡故意挑變動最大的來提醒。
+   */
+  function partTrend(p) {
+    const ss = S.ser.filter(s => s.part.id === p.id && s.pts.length >= 2);
+    if (!ss.length) return null;
+    const pick = [...ss].sort((a, b) => b.pts.length - a.pts.length || b.q - a.q || a.src.localeCompare(b.src))[0];
+    const c = change(pick);
+    return c ? { s: pick, c } : null;
+  }
+  /** 每顆料號固定給一個箭頭：▲ 漲、▼ 跌、— 持平或資料不足。 */
+  function trendBadge(p) {
+    const t = partTrend(p);
+    if (!t) return `<span class="trend none" title="同一個來源、同一個買量至少要有兩個不同日期的報價，才算得出漲跌">—</span>`;
+    const pct = t.c.pct;
+    const cls = pct > 0.005 ? "up" : pct < -0.005 ? "down" : "flat";
+    const arrow = cls === "up" ? "▲" : cls === "down" ? "▼" : "—";
+    const days = Math.max(1, Math.round((t.c.to.t - t.c.from.t) / DAY));
+    const title = `${t.s.src}・${t.s.q.toLocaleString()} 顆：`
+      + `${t.c.from.d} ${fmtPrice(t.c.from.p, t.s.cur)} → ${t.c.to.d} ${fmtPrice(t.c.to.p, t.s.cur)}（相隔 ${days} 天）`;
+    return `<span class="trend ${cls}" title="${esc(title)}"><i>${arrow}</i>${cls === "flat" ? "持平" : esc(fmtPct(pct))}</span>`;
+  }
+
   // ---------- 規格 ----------
   // 這些欄位由程式每天從通路的回應抓下來，不是人工填的。
   const SPEC_LABELS = {
@@ -615,12 +653,11 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     cols.innerHTML = gs.map(g => {
       const ps = all.filter(p => (p.group || "其他") === g && matches(p)).sort((a, b) => a.mpn.localeCompare(b.mpn));
       const items = ps.map(p => {
-        const o = latest(p), mv = partMove(p);
-        const tag = mv ? ` <span class="tk ${mv.c.pct > 0 ? "up" : "down"}">${fmtPct(mv.c.pct)}</span>` : "";
+        const o = latest(p);
         const line1 = [p.manufacturer, p.note].filter(Boolean).map(hl).join("・");
         const sp = specLine(p);
         const line2 = o ? `<span class="px">${fmtPrice(+o.p, o.cur)}</span>・${hl(o.src)} ${(+o.q).toLocaleString()} 顆・${md(o.d)}${o.lt != null && o.lt !== "" ? `・交期 ${o.lt} 週` : ""}${(p.obs || []).length > 1 ? `・共 ${p.obs.length} 筆` : ""}` : notFoundLine(p);
-        return `<li><button type="button" data-part="${esc(p.id)}"><span class="nm">${hl(p.mpn)}</span>${tag}<span class="ds">${line1}</span>${sp ? `<span class="sp">${sp}</span>` : ""}<span class="ds">${line2}</span></button></li>`;
+        return `<li><button type="button" data-part="${esc(p.id)}"><span class="row1"><span class="nm">${hl(p.mpn)}</span>${trendBadge(p)}</span><span class="ds">${line1}</span>${sp ? `<span class="sp">${sp}</span>` : ""}<span class="ds">${line2}</span></button></li>`;
       }).join("");
       return `<div class="col${ps.length ? "" : " empty"}" style="--c:${gcol(g)}"><h3>${esc(GROUP_NAMES[g] || g)}・${ps.length}</h3><ul>${items || "<li>沒有符合條件的料號。</li>"}</ul></div>`;
     }).join("");
@@ -667,7 +704,7 @@ code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .
     if (!part) { $("dlgPart").close(); return; }
     $("pHead").style.setProperty("--c", gcol(part.group || "其他"));
     $("pTitle").textContent = part.mpn;
-    $("pMeta").innerHTML = [part.manufacturer, GROUP_NAMES[part.group] || part.group, part.note, `${(part.obs || []).length} 筆報價`]
+    $("pMeta").innerHTML = trendBadge(part) + [part.manufacturer, GROUP_NAMES[part.group] || part.group, part.note, `${(part.obs || []).length} 筆報價`]
       .filter(Boolean).map(esc).join("・")
       + (part.spec && part.spec.category ? ` <span class="kind">${esc(part.spec.category)}</span>` : "");
     $("specSlot").innerHTML = specBox(part);
