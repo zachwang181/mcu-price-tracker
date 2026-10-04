@@ -1,6 +1,6 @@
 {
-  "ranAt": "2026-10-03T05:54:24.577Z",
-  "dateTW": "2026-10-03",
+  "ranAt": "2026-10-04T06:31:28.228Z",
+  "dateTW": "2026-10-04",
   "sources": [
     {
       "name": "Digi-Key",
@@ -22,11 +22,11 @@
     {
       "name": "Mouser",
       "key": "mouser",
-      "status": "partial",
+      "status": "ok",
       "configured": true,
-      "found": 7,
+      "found": 9,
       "notFound": 4,
-      "failed": 2,
+      "failed": 0,
       "notFoundMpns": [
         "GD32F103C8T6",
         "GD32F303RCT6",
@@ -34,16 +34,7 @@
         "CH32F103C8T6"
       ],
       "nearMisses": {},
-      "errors": [
-        {
-          "mpn": "STM32G030F6P6",
-          "message": "Unexpected token '<', \"\r\n\r\n\r\n<!DOCTYPE \"... is not valid JSON"
-        },
-        {
-          "mpn": "ATMEGA328P-AU",
-          "message": "Unexpected token '<', \"\r\n\r\n\r\n<!DOCTYPE \"... is not valid JSON"
-        }
-      ]
+      "errors": []
     },
     {
       "name": "LCSC",
@@ -54,7 +45,7 @@
     }
   ],
   "parts": 13,
-  "newObs": 48,
+  "newObs": 54,
   "problems": [],
   "ok": true
 }
