@@ -838,6 +838,84 @@
         "st": 14345,
         "note": "包裝 511-STM32F103C8T6・級距 1000+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 7.77,
+        "cur": "USD",
+        "lt": 40,
+        "st": 7465,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 5.0446,
+        "cur": "USD",
+        "lt": 40,
+        "st": 7465,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 4.66912,
+        "cur": "USD",
+        "lt": 40,
+        "st": 7465,
+        "note": "包裝 Tray・級距 500+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 7.88,
+        "cur": "USD",
+        "lt": 40,
+        "st": 14865,
+        "note": "包裝 511-STM32F103C8T6・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 4.52,
+        "cur": "USD",
+        "lt": 40,
+        "st": 14865,
+        "note": "包裝 511-STM32F103C8T6・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 4.16,
+        "cur": "USD",
+        "lt": 40,
+        "st": 14865,
+        "note": "包裝 511-STM32F103C8T6・級距 1000+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -864,7 +942,7 @@
       "desc": "IC MCU 32BIT 64KB FLASH 48LQFP",
       "datasheet": "https://www.st.com/resource/en/datasheet/stm32f103cb.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32F103C8T6/1646338",
@@ -1619,6 +1697,84 @@
         "st": 42920,
         "note": "包裝 511-STM32G030F6P6・級距 1000+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 2.18,
+        "cur": "USD",
+        "lt": 52,
+        "st": 73780,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 1.32919,
+        "cur": "USD",
+        "lt": 52,
+        "st": 73780,
+        "note": "包裝 Tray・級距 74+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 1.10917,
+        "cur": "USD",
+        "lt": 52,
+        "st": 73780,
+        "note": "包裝 Tray・級距 518+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 2.03,
+        "cur": "USD",
+        "lt": 52,
+        "st": 42920,
+        "note": "包裝 511-STM32G030F6P6・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 1.07,
+        "cur": "USD",
+        "lt": 52,
+        "st": 42920,
+        "note": "包裝 511-STM32G030F6P6・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 0.897,
+        "cur": "USD",
+        "lt": 52,
+        "st": 42920,
+        "note": "包裝 511-STM32G030F6P6・級距 1000+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -1645,7 +1801,7 @@
       "desc": "IC MCU 32BIT 32KB FLASH 20TSSOP",
       "datasheet": "https://www.st.com/resource/en/datasheet/stm32g030c6.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/stmicroelectronics/STM32G030F6P6/10326686",
@@ -2400,6 +2556,84 @@
         "st": 8039,
         "note": "包裝 556-ATMEGA328P-AU・級距 100+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 2.66,
+        "cur": "USD",
+        "lt": 28,
+        "st": 27225,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 2.2,
+        "cur": "USD",
+        "lt": 28,
+        "st": 27225,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.2,
+        "cur": "USD",
+        "lt": 28,
+        "st": 27225,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 2.66,
+        "cur": "USD",
+        "lt": 9,
+        "st": 8004,
+        "note": "包裝 556-ATMEGA328P-AU・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 2.2,
+        "cur": "USD",
+        "lt": 9,
+        "st": 8004,
+        "note": "包裝 556-ATMEGA328P-AU・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.2,
+        "cur": "USD",
+        "lt": 9,
+        "st": 8004,
+        "note": "包裝 556-ATMEGA328P-AU・級距 100+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -2427,7 +2661,7 @@
       "desc": "IC MCU 8BIT 32KB FLASH 32TQFP",
       "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/ATmega48A-PA-88A-PA-168A-PA-328-P-DS-DS40002061B.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/microchip-technology/ATMEGA328P-AU/1832260",
@@ -3260,6 +3494,84 @@
         "st": 1620,
         "note": "包裝 556-ATSAMD21G18A-AU・級距 100+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 4.16,
+        "cur": "USD",
+        "lt": 6,
+        "st": 2307,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 3.43,
+        "cur": "USD",
+        "lt": 6,
+        "st": 2307,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 3.43,
+        "cur": "USD",
+        "lt": 6,
+        "st": 2307,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 4.16,
+        "cur": "USD",
+        "lt": 9.6,
+        "st": 1610,
+        "note": "包裝 556-ATSAMD21G18A-AU・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 3.43,
+        "cur": "USD",
+        "lt": 9.6,
+        "st": 1610,
+        "note": "包裝 556-ATSAMD21G18A-AU・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 3.43,
+        "cur": "USD",
+        "lt": 9.6,
+        "st": 1610,
+        "note": "包裝 556-ATSAMD21G18A-AU・級距 100+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -3286,7 +3598,7 @@
       "desc": "IC MCU 32BIT 256KB FLASH 48TQFP",
       "datasheet": "https://ww1.microchip.com/downloads/en/DeviceDoc/SAM-D21-DA1-Family-Data-Sheet-DS40001882H.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/microchip-technology/ATSAMD21G18A-AU/5056473",
@@ -4080,6 +4392,84 @@
         "st": 655,
         "note": "包裝 841-MKL25Z128VLK4・級距 960+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 13.14,
+        "cur": "USD",
+        "lt": 13,
+        "st": 909,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 8.8511,
+        "cur": "USD",
+        "lt": 13,
+        "st": 909,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 8.08845,
+        "cur": "USD",
+        "lt": 13,
+        "st": 909,
+        "note": "包裝 Tray・級距 960+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 12.05,
+        "cur": "USD",
+        "lt": 13,
+        "st": 655,
+        "note": "包裝 841-MKL25Z128VLK4・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 8.08,
+        "cur": "USD",
+        "lt": 13,
+        "st": 655,
+        "note": "包裝 841-MKL25Z128VLK4・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 7.01,
+        "cur": "USD",
+        "lt": 13,
+        "st": 655,
+        "note": "包裝 841-MKL25Z128VLK4・級距 960+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -4106,7 +4496,7 @@
       "desc": "IC MCU 32BIT 128KB FLASH 80FQFP",
       "datasheet": "https://www.nxp.com/docs/en/data-sheet/KL25P80M48SF0.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/nxp-usa-inc/MKL25Z128VLK4/3608488",
@@ -4900,6 +5290,84 @@
         "st": 4557,
         "note": "包裝 771-LPC1768FBD100K・級距 450+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 15.69,
+        "cur": "USD",
+        "lt": 39,
+        "st": 6632,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 10.6839,
+        "cur": "USD",
+        "lt": 39,
+        "st": 6632,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 9.81086,
+        "cur": "USD",
+        "lt": 39,
+        "st": 6632,
+        "note": "包裝 Tray・級距 900+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 17.96,
+        "cur": "USD",
+        "lt": 39,
+        "st": 4557,
+        "note": "包裝 771-LPC1768FBD100K・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 12.33,
+        "cur": "USD",
+        "lt": 39,
+        "st": 4557,
+        "note": "包裝 771-LPC1768FBD100K・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 11.58,
+        "cur": "USD",
+        "lt": 39,
+        "st": 4557,
+        "note": "包裝 771-LPC1768FBD100K・級距 450+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -4926,7 +5394,7 @@
       "desc": "IC MCU 32BIT 512KB FLASH 100LQFP",
       "datasheet": "http://www.nxp.com/docs/en/data-sheet/LPC1769_68_67_66_65_64_63.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/nxp-usa-inc/LPC1768FBD100K/11681534",
@@ -5720,6 +6188,84 @@
         "st": 700,
         "note": "包裝 595-MSP430G2553IN20・級距 1000+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 4.82,
+        "cur": "USD",
+        "lt": 20,
+        "st": 286,
+        "note": "包裝 Tube・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 3.0461,
+        "cur": "USD",
+        "lt": 20,
+        "st": 286,
+        "note": "包裝 Tube・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.8021,
+        "cur": "USD",
+        "lt": 20,
+        "st": 286,
+        "note": "包裝 Tube・級距 500+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 6.31,
+        "cur": "USD",
+        "lt": 20,
+        "st": 702,
+        "note": "包裝 595-MSP430G2553IN20・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 3.55,
+        "cur": "USD",
+        "lt": 20,
+        "st": 702,
+        "note": "包裝 595-MSP430G2553IN20・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 2.77,
+        "cur": "USD",
+        "lt": 20,
+        "st": 702,
+        "note": "包裝 595-MSP430G2553IN20・級距 1000+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -5746,7 +6292,7 @@
       "desc": "IC MCU 16BIT 16KB FLASH 20DIP",
       "datasheet": "https://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=https%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fmsp430g2153",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/texas-instruments/MSP430G2553IN20/2638885",
@@ -6540,6 +7086,84 @@
         "st": 3139,
         "note": "包裝 968-7FA4M1AB3CFM#AA0・級距 480+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 6.38,
+        "cur": "USD",
+        "lt": 18,
+        "st": 5298,
+        "note": "包裝 Tray・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 4.0924,
+        "cur": "USD",
+        "lt": 18,
+        "st": 5298,
+        "note": "包裝 Tray・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 3.74023,
+        "cur": "USD",
+        "lt": 18,
+        "st": 5298,
+        "note": "包裝 Tray・級距 640+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 6.38,
+        "cur": "USD",
+        "lt": 18,
+        "st": 3138,
+        "note": "包裝 968-7FA4M1AB3CFM#AA0・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 3.99,
+        "cur": "USD",
+        "lt": 18,
+        "st": 3138,
+        "note": "包裝 968-7FA4M1AB3CFM#AA0・級距 100+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 3.74,
+        "cur": "USD",
+        "lt": 18,
+        "st": 3138,
+        "note": "包裝 968-7FA4M1AB3CFM#AA0・級距 480+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -6567,7 +7191,7 @@
       "desc": "IC MCU 32BIT 256KB FLASH 64LFQFP",
       "datasheet": "https://www.renesas.com/en/document/dst/ra4m1-group-datasheet",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/renesas-electronics-corporation/R7FA4M1AB3CFM-AA0/10447195",
@@ -7437,6 +8061,84 @@
         "st": 1227,
         "note": "包裝 503-N76E003AT20・級距 518+・自動抓取",
         "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1,
+        "p": 0.83,
+        "cur": "USD",
+        "lt": 32,
+        "st": 2726,
+        "note": "包裝 Tube・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 100,
+        "p": 0.60514,
+        "cur": "USD",
+        "lt": 32,
+        "st": 2726,
+        "note": "包裝 Tube・級距 74+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-digi-key-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Digi-Key",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 0.5189,
+        "cur": "USD",
+        "lt": 32,
+        "st": 2726,
+        "note": "包裝 Tube・級距 518+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1,
+        "p": 0.83,
+        "cur": "USD",
+        "lt": 40,
+        "st": 1227,
+        "note": "包裝 503-N76E003AT20・級距 1+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-100",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 100,
+        "p": 0.571,
+        "cur": "USD",
+        "lt": 40,
+        "st": 1227,
+        "note": "包裝 503-N76E003AT20・級距 74+・自動抓取",
+        "origin": "auto"
+      },
+      {
+        "id": "auto-mouser-2026-10-06-1000",
+        "d": "2026-10-06",
+        "src": "Mouser",
+        "kind": "catalog",
+        "q": 1000,
+        "p": 0.518,
+        "cur": "USD",
+        "lt": 40,
+        "st": 1227,
+        "note": "包裝 503-N76E003AT20・級距 518+・自動抓取",
+        "origin": "auto"
       }
     ],
     "spec": {
@@ -7464,7 +8166,7 @@
       "desc": "IC MCU 8BIT 18KB FLASH 20TSSOP",
       "datasheet": "https://www.nuvoton.com/export/resource-files/DS_N76E003_EN_Rev1.09.pdf",
       "src": "Digi-Key",
-      "d": "2026-10-05"
+      "d": "2026-10-06"
     },
     "links": {
       "Digi-Key": "https://www.digikey.com/en/products/detail/nuvoton-technology-corporation/N76E003AT20/8747842",
