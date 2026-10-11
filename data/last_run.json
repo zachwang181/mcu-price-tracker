@@ -1,6 +1,6 @@
 {
-  "ranAt": "2026-10-10T06:32:47.736Z",
-  "dateTW": "2026-10-10",
+  "ranAt": "2026-10-11T06:38:16.048Z",
+  "dateTW": "2026-10-11",
   "sources": [
     {
       "name": "Digi-Key",
@@ -22,34 +22,19 @@
     {
       "name": "Mouser",
       "key": "mouser",
-      "status": "partial",
+      "status": "ok",
       "configured": true,
-      "found": 7,
-      "notFound": 2,
-      "failed": 4,
+      "found": 9,
+      "notFound": 4,
+      "failed": 0,
       "notFoundMpns": [
         "GD32F103C8T6",
-        "GD32F303RCT6"
+        "GD32F303RCT6",
+        "CH32V003F4P6",
+        "CH32F103C8T6"
       ],
       "nearMisses": {},
-      "errors": [
-        {
-          "mpn": "ATSAMD21G18A-AU",
-          "message": "Unexpected token '<', \"\r\n\r\n\r\n<!DOCTYPE \"... is not valid JSON"
-        },
-        {
-          "mpn": "LPC1768FBD100K",
-          "message": "Unexpected token '<', \"\r\n\r\n\r\n<!DOCTYPE \"... is not valid JSON"
-        },
-        {
-          "mpn": "CH32V003F4P6",
-          "message": "Unexpected token '<', \"\r\n\r\n\r\n<!DOCTYPE \"... is not valid JSON"
-        },
-        {
-          "mpn": "CH32F103C8T6",
-          "message": "Unexpected token '<', \"\r\n\r\n\r\n<!DOCTYPE \"... is not valid JSON"
-        }
-      ]
+      "errors": []
     },
     {
       "name": "LCSC",
@@ -60,7 +45,7 @@
     }
   ],
   "parts": 13,
-  "newObs": 48,
+  "newObs": 54,
   "problems": [],
   "ok": true
 }
