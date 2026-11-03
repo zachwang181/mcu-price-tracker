@@ -1,17 +1,16 @@
 {
-  "ranAt": "2026-11-02T06:59:06.431Z",
-  "dateTW": "2026-11-02",
+  "ranAt": "2026-11-03T07:23:58.633Z",
+  "dateTW": "2026-11-03",
   "sources": [
     {
       "name": "Digi-Key",
       "key": "digikey",
       "status": "ok",
       "configured": true,
-      "found": 8,
-      "notFound": 5,
+      "found": 9,
+      "notFound": 4,
       "failed": 0,
       "notFoundMpns": [
-        "MSP430G2553IN20",
         "GD32F103C8T6",
         "GD32F303RCT6",
         "CH32V003F4P6",
@@ -46,7 +45,7 @@
     }
   ],
   "parts": 13,
-  "newObs": 51,
+  "newObs": 54,
   "problems": [],
   "ok": true
 }
